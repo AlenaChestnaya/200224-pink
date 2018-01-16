@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Честная](https://up.htmlacademy.ru/adaptive/13/user/200224).
-* Наставник: `Неизвестно`.
+* Наставник: [Галина Борисова](https://htmlacademy.ru/profile/galina_borisova).
 
 ---
 
