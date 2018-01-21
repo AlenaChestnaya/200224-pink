@@ -34,23 +34,26 @@
 
       <p class="field-page__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form class="field-page__form comp-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="field-page__fieldset">
+          <legend class="visually-hidden">Поля ввода имени пользователя</legend>
+          <ul class="comp-form__name name-fields">
+            <li class="name-fields__item">
+              <label class="name-fields__label" for="last-name">Фамилия:</label>
+              <input class="name-fields__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="name-fields__item">
+              <label class="nameo-fields__label" for="first-name">Имя:</label>
+              <input class="name-fields__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="name-fields__item">
+              <label class="name-fields__label" for="patronym">Отчество:</label>
+              <input class="name-fields__input" type="text" name="patronym" id="patronym" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
 
-        <ul class="comp-form__name name-fields">
-          <li class="name-fields__item">
-            <label class="name-fields__label" for="last-name">Фамилия:</label>
-            <input class="name-fields__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
-          </li>
-          <li class="name-fields__item">
-            <label class="nameo-fields__label" for="first-name">Имя:</label>
-            <input class="name-fields__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
-          </li>
-          <li class="name-fields__item">
-            <label class="name-fields__label" for="patronym">Отчество:</label>
-            <input class="name-fields__input" type="text" name="patronym" id="patronym" placeholder="Ну и отчество тоже">
-          </li>
-        </ul>
-
-        <div class="comp-form__achievements achievements-list">
+        <fieldset class="field-page__fieldset achievements-list">
+          <legend class="visually-hidden">Выберите достижения</legend>
           <h3 class="achievements-list__title">Ваши безбашенные достижения в путешествии</h3>
           <ul class="achievements-list__list">
             <li class="achievements-list__item">
@@ -78,20 +81,24 @@
               <label class="achievements-list__label" for="hotel">Разгромил отель</label>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <ul class="comp-form__contacts user-contacts-list">
-          <li class="user-contacts-list__item">
-            <label class="user-contacts-list__label" for="phone-number">Номер телефона</label>
-            <input class="user-contacts-list__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-          </li>
-          <li class="user-contacts-list__item">
-            <label class="user-contacts-list__label" for="email">Адрес почты</label>
-            <input class="user-contacts-list__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
-          </li>
-        </ul>
+        <fieldset class="field-page__fieldset">
+          <legend class="visually-hidden">Поля ввода контактов пользователя</legend>
+          <ul class="comp-form__contacts user-contacts-list">
+            <li class="user-contacts-list__item">
+              <label class="user-contacts-list__label" for="phone-number">Номер телефона</label>
+              <input class="user-contacts-list__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="user-contacts-list__item">
+              <label class="user-contacts-list__label" for="email">Адрес почты</label>
+              <input class="user-contacts-list__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+            </li>
+          </ul>
+        </fieldset>
 
-        <div class="comp-form__app">
+        <fieldset class="field-page__fieldset comp-form__app">
+          <legend class="visually-hidden">Операционная система пользователя</legend>
           <h3 class="comp-form__app-title">С каким приложением путешествовали?</h3>
           <ul class="comp-form__app-list app-list">
             <li class="app-list__item">
@@ -107,12 +114,13 @@
               <label class="app-list__label" for="windows">Windows Phone</label>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <div class="comp-form__description description-field">
+        <fieldset class="field-page__fieldset description-field">
+          <legend class="visually-hidden">Комментарии пользователя</legend>
           <label class="description-field__label" for="description">Опишите свои эмоции</label>
           <textarea class="description-field__field" name="description" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
+        </fieldset>
 
         <input class="comp-form__submit" type="submit" value="Отправить форму">
         <span class="comp-form__remark">
