@@ -1,8 +1,24 @@
 .menu-list {
-  list-style: none;
   padding: 0;
+  list-style: none;
+  background-color: @dark-blue;
+}
+
+.menu-list__item {
+  text-align: center;
+  border-bottom: 1px solid #000000;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  &:first-child {
+    border-top: 1px solid #000000;
+  }
 }
 
 .menu-list__link {
+  font-family: @bold-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
   text-decoration: none;
 }
