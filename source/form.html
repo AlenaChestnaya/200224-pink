@@ -8,26 +8,28 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" alt="Логотип проекта">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__menu menu-list">
-          <li class="menu-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu-list__item menu-list__item--current">
-            <a>Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__top-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип проекта">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
+          <ul class="main-nav__menu menu-list">
+            <li class="menu-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item menu-list__item--current">
+              <a>Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
@@ -98,10 +100,10 @@
           </ul>
         </fieldset>
 
-        <fieldset class="field-page__fieldset comp-form__app">
+        <fieldset class="field-page__fieldset app-field">
           <legend class="visually-hidden">Операционная система пользователя</legend>
-          <h3 class="comp-form__app-title">С каким приложением путешествовали?</h3>
-          <ul class="comp-form__app-list app-list">
+          <h3 class="app-field__title">С каким приложением путешествовали?</h3>
+          <ul class="app-field__list app-list">
             <li class="app-list__item">
               <input class="visually-hidden" type="radio" name="operating-system" id="apple" value="apple" checked>
               <label class="app-list__label" for="apple">Pink для iOS</label>
@@ -138,19 +140,19 @@
           <img class="social__logo-image" src="#" alt="Логотип проекта Пинк">
         </a>
         <ul class="social__list social-icons">
-          <li class="social-icons__item social-icons__item--twitter">
-            <a href="#">Твиттер</a>
+          <li>
+            <a class="social-icons__item social-icons__item--twitter" href="#" title="Твиттер"></a>
           </li>
-          <li class="social-icons__item social-icons__item--facebook">
-            <a href="#">Фейсбук</a>
+          <li>
+            <a class="social-icons__item social-icons__item--facebook" href="#" title="Фейсбук"></a>
           </li>
-          <li class="social-icons__item social-icons__item--youtube">
-            <a href="#">Ютуб</a>
+          <li>
+            <a class="social-icons__item social-icons__item--youtube" href="#" title="Ютуб"></a>
           </li>
         </ul>
         <div class="social__developer developer">
           <span class="developer__text">Разработано</span>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy"></a>
         </div>
       </section>
     </footer>

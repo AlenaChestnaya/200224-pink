@@ -8,26 +8,28 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" alt="Логотип проекта">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__menu menu-list">
-          <li class="menu-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item menu-list__item--current">
-            <a>Фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__top-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип проекта">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
+          <ul class="main-nav__menu menu-list">
+            <li class="menu-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item menu-list__item--current">
+              <a>Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <h1 class="page-header__header">Фотографии пользователей</h1>
     </header>
 
@@ -93,18 +95,26 @@
         <h2 class="visually-hidden">Опубликовать свою фотографию</h2>
         <p class="post__title">Затмите их всех!</p>
         <p class="post__title">Выкладывайте все, что накопилось в телефоне!</p>
-        <img class="post__photo" src="http://placehold.it/150x100" alt="Ваша фотография">
-        <ul class="post__editor photo-editor">
-          <li class="photo-editor__item photo-editor__item--active">Обрезать</li>
-          <li class="photo-editor__item">Свет</li>
-          <li class="photo-editor__item">Контраст</li>
-        </ul>
-        <div class="post__range-controls range-controls">
-          <span class="range-controls__bar"></span>
-          <span class="range-controls__toggle"></span>
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/150x100" alt="Ваша фотография">
+          <ul class="post__editor photo-editor">
+            <li class="photo-editor__item">
+              <button class="photo-editor__icon photo-editor__icon--crop photo-editor__icon--active" type="button" title="Обрезать"></button>
+            </li>
+            <li class="photo-editor__item">
+              <button class="photo-editor__icon photo-editor__icon--fill" type="button" title="Заливка"></button>
+            </li>
+            <li class="photo-editor__item">
+              <button class="photo-editor__icon photo-editor__icon--contrast" type="button" title="Контраст"></button>
+            </li>
+          </ul>
+          <div class="post__range-controls range-controls">
+            <span class="range-controls__bar"></span>
+            <span class="range-controls__toggle"></span>
+          </div>
+          <button class="post__button button button--pink" type="button">Запостить</button>
+          <button class="post__button button button--pale" type="reset">Отмена</button>
         </div>
-        <button class="post__button button button--pink" type="button">Запостить</button>
-        <button class="post__button button button--pale" type="button">Отмена</button>
       </section>
 
     </main>
@@ -116,19 +126,19 @@
           <img class="social__logo-image" src="#" alt="Логотип проекта Пинк">
         </a>
         <ul class="social__list social-icons">
-          <li class="social-icons__item social-icons__item--twitter">
-            <a href="#">Твиттер</a>
+          <li>
+            <a class="social-icons__item social-icons__item--twitter" href="#" title="Твиттер"></a>
           </li>
-          <li class="social-icons__item social-icons__item--facebook">
-            <a href="#">Фейсбук</a>
+          <li>
+            <a class="social-icons__item social-icons__item--facebook" href="#" title="Фейсбук"></a>
           </li>
-          <li class="social-icons__item social-icons__item--youtube">
-            <a href="#">Ютуб</a>
+          <li>
+            <a class="social-icons__item social-icons__item--youtube" href="#" title="Ютуб"></a>
           </li>
         </ul>
         <div class="social__developer developer">
           <span class="developer__text">Разработано</span>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy"></a>
         </div>
       </section>
     </footer>
