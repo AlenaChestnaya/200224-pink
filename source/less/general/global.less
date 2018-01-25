@@ -1,0 +1,44 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: @dark-blue;
+}
+
+.label() {
+  font-size: 14px;
+  font-weight: 400;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+main, section, header {
+  outline: 2px solid red;
+}
+
+fieldset {
+  outline: 2px solid green;
+}
+
+.user-photos__item {
+  outline: 2px solid greenyellow;
+}
