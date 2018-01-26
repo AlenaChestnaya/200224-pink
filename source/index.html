@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -31,27 +32,28 @@
           </ul>
         </nav>
       </div>
-      <img class="page-header__presentation-image" src="http://placehold.it/150x100" alt="Презентация проекта">
+      <section class="page-header__download download">
+        <div class="download__box">
+          <h2 class="visually-hidden">Ссылки на скачивание приложения</h2>
+          <h3 class="download__header">Взгляните <br>на жизнь <br>иначе!</h3>
+          <a class="download__button button button--white">Скачать приложение</a>
+          <ul class="download__phone-list phone-list">
+            <li class="phone-list__item phone-list__item--apple">
+              <a class="phone-list__link" href="#" title="Apple"></a>
+            </li>
+            <li class="phone-list__item phone-list__item--android">
+              <a class="phone-list__link" href="#" title="Android"></a>
+            </li>
+            <li class="phone-list__item phone-list__item--windows">
+              <a class="phone-list__link" href="#" title="Windows"></a>
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
-
-      <section class="download">
-        <h2 class="visually-hidden">Ссылки на скачивание приложения</h2>
-        <a class="download__button button button--white">Скачать приложение</a>
-        <ul class="download__phone-list phone-list">
-          <li class="phone-list__item phone-list__item--apple">
-            <a class="phone-list__link" href="#" title="Apple"></a>
-          </li>
-          <li class="phone-list__item phone-list__item--android">
-            <a class="phone-list__link" href="#" title="Android"></a>
-          </li>
-          <li class="phone-list__item phone-list__item--windows">
-            <a class="phone-list__link" href="#" title="Windows"></a>
-          </li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества приложения</h2>

@@ -1,8 +1,19 @@
 .download {
+  position: relative;
+  margin-top: 396px;
   padding-top: 28px;
   padding-bottom: 35px;
   text-align: center;
   background-color: #1d2631;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -285px;
+    left: 0;
+    width: 255px;
+    height: 290px;
+    background: url('../img/iphone-hand-mobile@1x.png') no-repeat;
+  }
 }
 
 .download__button {
@@ -15,10 +26,60 @@
   margin-bottom: 28px;
 }
 
+.download__header {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: @light-font;
+  font-weight: 300;
+  font-size: 40px;
+  color: #ffffff;
+}
+
 .download__text {
   margin: 0;
   font-family: @light-font;
   font-weight: 300;
   line-height: 24px;
   color: #ffffff;
+}
+
+@media (min-width: @tablet) {
+  .download {
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 103px;
+    padding-bottom: 111px;
+    z-index: 1;
+    background-color: transparent;
+    &::before {
+      width: 470px;
+      height: 510px;
+      z-index: -1;
+      top: auto;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      background-size: 100%;
+    }
+
+    .download__box {
+      width: 320px;
+    }
+  }
+
+  .download__header {
+    display: block;
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .download {
+    width: 960px;
+    &::before {
+      width: 560px;
+      height: 650px;
+    }
+  }
 }

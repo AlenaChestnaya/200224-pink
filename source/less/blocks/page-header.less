@@ -1,14 +1,12 @@
 .page-header {
   width: 100%;
-  height: 462px;
+  min-height: 462px;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
-  background-color: #2b3b4b;
+  background-color: #1d2631;
   &--smaller {
     height: 237px;
   }
@@ -17,13 +15,13 @@
 .page-header__top-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 66px;
+  min-height: 66px;
   box-sizing: border-box;
-  padding-top: 21px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgba(29, 38, 49, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__logo {
@@ -38,4 +36,20 @@
   font-size: 24px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: @tablet) {
+  .page-header {
+    min-height: 730px;
+  }
+
+  .page-header__top-wrapper {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-header {
+    min-height: 853px;
+  }
 }

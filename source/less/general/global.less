@@ -15,24 +15,26 @@
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: @dark-blue;
 }
 
-.label() {
-  font-size: 14px;
-  font-weight: 400;
-  color: @pink;
-  text-transform: uppercase;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-main, section, header {
+main, header, footer {
   outline: 2px solid red;
+}
+
+section {
+  outline: 2px solid orangered;
 }
 
 fieldset {
