@@ -1,7 +1,29 @@
 .features-list {
   list-style: none;
-  padding: 0;
-  padding-top: 110px;
+  padding-bottom: 0;
+  padding-top: 124px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
   text-align: center;
-  background: @gray-back url('../img/bg-triangle-white.svg') no-repeat top;
+}
+
+@media (min-width: @tablet) {
+  .features-list {
+    text-align: left;
+    padding-top: 75px;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .features-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: @desktop;
+    min-height: 610px;
+    text-align: center;
+  }
 }
