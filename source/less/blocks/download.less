@@ -1,8 +1,7 @@
 .download {
   position: relative;
   margin-top: 396px;
-  padding-top: 28px;
-  padding-bottom: 35px;
+  box-sizing: border-box;
   text-align: center;
   background-color: #1d2631;
   &::before {
@@ -18,18 +17,17 @@
 
 .download__button {
   margin: 0 auto;
+  margin-top: 28px;
   margin-bottom: 32px;
 }
 
 .download__phone-list {
   margin: 0 auto;
-  margin-bottom: 28px;
 }
 
 .download__header {
   display: none;
   margin-top: 0;
-  margin-bottom: 32px;
   font-family: @light-font;
   font-weight: 300;
   font-size: 40px;
@@ -38,48 +36,79 @@
 
 .download__text {
   margin: 0;
+  margin-top: 28px;
+  margin-bottom: 35px;
   font-family: @light-font;
   font-weight: 300;
   line-height: 24px;
   color: #ffffff;
 }
 
+.download__box {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-sizing: border-box;
+}
+
 @media (min-width: @tablet) {
   .download {
     width: 660px;
+    height: 546px;
     margin: 0 auto;
-    margin-top: 103px;
-    padding-bottom: 111px;
     z-index: 1;
     background-color: transparent;
     &::before {
       width: 470px;
-      height: 510px;
+      height: 546px;
       z-index: -1;
-      top: auto;
+      top: 0;
       left: auto;
-      bottom: 0;
       right: 0;
       background-size: 100%;
     }
+  }
 
-    .download__box {
+  .download__box {
       width: 320px;
     }
-  }
 
   .download__header {
     display: block;
-    margin-top: 18px;
+    margin-top: 29px;
+  }
+
+  .download__button {
+    margin-top: 39px;
+    margin-bottom: 46px;
+  }
+
+  .download__text {
+    margin-top: 41px;
+    margin-bottom: 112px;
   }
 }
 
 @media (min-width: @desktop) {
   .download {
     width: 960px;
+    min-height: 645px;
     &::before {
       width: 560px;
-      height: 650px;
+      height: 645px;
     }
+  }
+
+  .download__header {
+    margin-top: 20px;
+  }
+
+  .download__button {
+    margin-top: 62px;
+    margin-bottom: 67px;
+  }
+
+  .download__text {
+    margin-top: 60px;
+    margin-bottom: 124px;
   }
 }
