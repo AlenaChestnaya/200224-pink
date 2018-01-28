@@ -1,14 +1,17 @@
 .menu-list {
+  width: 320px;
   padding: 0;
   list-style: none;
   background-color: @dark-blue;
 }
 
 .menu-list__item {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 63px;
   border-bottom: 1px solid #000000;
-  padding-top: 15px;
-  padding-bottom: 14px;
   &:first-child {
     border-top: 1px solid #000000;
   }
@@ -21,4 +24,5 @@
   line-height: 32px;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
 }

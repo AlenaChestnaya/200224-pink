@@ -1,4 +1,6 @@
 .price {
+  min-width: 320px;
+  margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 45px;
   text-align: center;
@@ -6,19 +8,40 @@
 }
 
 .price__table {
+  min-width: 828px;
   margin: 0 auto;
   margin-bottom: 40px;
   border-collapse: collapse;
 }
 
+.price__scroll {
+  overflow: scroll;
+}
+
 .price__header {
-  display: block;
-  width: 276px;
-  padding-top: 24px;
-  padding-bottom: 21px;
+  padding-top: 25px;
+  padding-bottom: 23px;
   background-color: #283645;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  &--left {
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  &--right {
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.price__empty {
+  display: none;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
 }
 
 .price__name {
@@ -39,18 +62,88 @@
   color: #ffffff;
 }
 
-.price__item {
+.price__cell {
   padding: 22px;
   text-align: start;
+  box-sizing: border-box;
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
   border-top: none;
   background-color: #ffffff;
+  &--large-screen {
+    display: none;
+  }
+}
+
+.price__presence--yes {
+  display: block;
+  width: 31px;
+  height: 21px;
+  background: green;
+}
+
+.price__presence--no {
+  display: block;
+  width: 27px;
+  height: 26px;
+  background: red;
 }
 
 .price__slider {
-  position: relative;
-  left: 35%;
-  margin: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet) {
+  .price__table {
+    min-width: 620px;
+    margin-bottom: 70px;
+  }
+
+  .price__empty {
+    display: table-cell;
+    min-width: 153px;
+  }
+
+  .price__cell {
+    padding: 15px;
+    &--large-screen {
+      display: table-cell;
+      }
+  }
+
+  .price__header {
+    min-width: 153px;
+    padding-top: 21px;
+    padding-bottom: 16px;
+  }
+
+  .price__item--mobile {
+    display: none;
+  }
+
+  .price__presence {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .price__table {
+    min-width: 940px;
+    margin-bottom: 95px;
+  }
+
+  .price__header {
+    min-width: 235px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+  }
+
+  .price__empty {
+    min-width: 234px;
+  }
+
+  .price__cell {
+    padding: 24px;
+  }
 }
