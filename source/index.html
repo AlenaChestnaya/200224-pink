@@ -88,10 +88,16 @@
 
       <section class="review">
         <h2 class="visually-hidden">Отзывы на работу приложения</h2>
-        <blockquote class="review__item">
-          <cite class="review__author-name">Николай Петров</cite>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+        <div class="review__container">
+          <button class="review__toggle review__toggle--prev" type="button" title="Предыдущий отзыв"></button>
+          <blockquote class="review__item">
+            <cite class="review__author-name">Николай Петров
+              <span class="review__remark">25 лет, водитель трамвая</span>
+            </cite>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <button class="review__toggle review__toggle--next" type="button" title="Следующий отзыв"></button>
+        </div>
         <ul class="review__slider slider-toggles">
           <li class="slider-toggles__item">
             <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">1</button>
@@ -107,24 +113,71 @@
 
       <section class="price">
         <h2 class="visually-hidden">Тарифы приложения</h2>
-        <table class="price__table">
-          <tr>
-            <th class="price__header price__header--marked">
-              <b class="price__name">Стандарт</b>
-              <span class="price__sum">3,99 USD</span>
-            </th>
-          </tr>
-          <tr>
-            <td class="price__item price__item--checked">Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td class="price__item price__item--checked">Смайлики</td>
-          </tr>
-          <tr>
-            <td class="price__item">Комментарии</td>
-          </tr>
-        </table>
-        <ul class="price__slider slider-toggles">
+        <div class="price__scroll">
+          <table class="price__table">
+            <tr>
+              <th class="price__empty"></th>
+              <th class="price__header price__header--left">
+                <b class="price__name">База</b>
+                <span class="price__sum">1,99 USD</span>
+              </th>
+              <th class="price__header price__header--marked">
+                <b class="price__name">Стандарт</b>
+                <span class="price__sum">3,99 USD</span>
+              </th>
+              <th class="price__header price__header--right">
+                <b class="price__name">Анлим</b>
+                <span class="price__sum">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="price__cell price__cell--large-screen">Розовый фильтр</td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Розовый фильтр</span>
+                <span class="price__presence price__presence--yes"></span>
+              </td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Розовый фильтр</span>
+                <span class="price__presence price__presence--yes"></span>
+              </td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Розовый фильтр</span>
+                <span class="price__presence price__presence--yes"></span>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__cell price__cell--large-screen">Смайлики</td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Смайлики</span>
+                <span class="price__presence price__presence--no"></span>
+              </td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Смайлики</span>
+                <span class="price__presence price__presence--yes"></span>
+              </td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Смайлики</span>
+                <span class="price__presence price__presence--yes"></span>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__cell price__cell--large-screen">Комментарии</td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Комментарии</span>
+                <span class="price__presence price__presence--no"></span>
+              </td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Комментарии</span>
+                <span class="price__presence price__presence--no"></span>
+              </td>
+              <td class="price__cell">
+                <span class="price__item price__item--mobile">Комментарии</span>
+                <span class="price__presence price__presence--yes"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- <ul class="price__slider slider-toggles">
           <li class="slider-toggles__item">
             <button class="slider-toggles__toggle" type="button">1</button>
           </li>
@@ -134,7 +187,7 @@
           <li class="slider-toggles__item">
             <button class="slider-toggles__toggle" type="button">3</button>
           </li>
-        </ul>
+        </ul> -->
       </section>
 
     </main>
