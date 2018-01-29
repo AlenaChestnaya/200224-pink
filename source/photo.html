@@ -127,25 +127,37 @@
         <h2 class="visually-hidden">Опубликовать свою фотографию</h2>
         <p class="post__title">Затмите их всех!</p>
         <p class="post__title">Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="post__wrapper">
+        <div class="post__back">
           <img class="post__photo" src="http://placehold.it/280x374" alt="Ваша фотография">
-          <ul class="post__editor photo-editor">
-            <li class="photo-editor__item">
-              <button class="photo-editor__icon photo-editor__icon--crop photo-editor__icon--active" type="button" title="Обрезать"></button>
-            </li>
-            <li class="photo-editor__item">
-              <button class="photo-editor__icon photo-editor__icon--fill" type="button" title="Заливка"></button>
-            </li>
-            <li class="photo-editor__item">
-              <button class="photo-editor__icon photo-editor__icon--contrast" type="button" title="Контраст"></button>
-            </li>
-          </ul>
-          <div class="post__range-controls range-controls">
-            <span class="range-controls__bar"></span>
-            <span class="range-controls__toggle"></span>
+          <div class="post__container">
+            <ul class="post__editor photo-editor">
+              <li class="photo-editor__item photo-editor__item--active">
+                <button class="photo-editor__icon photo-editor__icon--crop photo-editor__icon--active" type="button" title="Обрезать"></button>
+                <div class="photo-editor__range-controls range-controls">
+                  <span class="range-controls__bar"></span>
+                  <span class="range-controls__toggle"></span>
+                </div>
+              </li>
+              <li class="photo-editor__item">
+                <button class="photo-editor__icon photo-editor__icon--fill" type="button" title="Заливка"></button>
+                <div class="photo-editor__range-controls range-controls">
+                  <span class="range-controls__bar"></span>
+                  <span class="range-controls__toggle"></span>
+                </div>
+              </li>
+              <li class="photo-editor__item">
+                <button class="photo-editor__icon photo-editor__icon--contrast" type="button" title="Контраст"></button>
+                <div class="photo-editor__range-controls range-controls">
+                  <span class="range-controls__bar"></span>
+                  <span class="range-controls__toggle"></span>
+                </div>
+              </li>
+            </ul>
+            <div class="post__buttons">
+              <button class="post__post-button button button--pink" type="button">Запостить</button>
+              <button class="post__reset-button button button--pale" type="reset">Отмена</button>
+            </div>
           </div>
-          <button class="post__post-button button button--pink" type="button">Запостить</button>
-          <button class="post__reset-button button button--pale" type="reset">Отмена</button>
         </div>
       </section>
 
