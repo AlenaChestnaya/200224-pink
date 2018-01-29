@@ -8,7 +8,7 @@
   background-position-y: center;
   box-sizing: border-box;
   &--smaller {
-    height: 237px;
+    min-height: 496px;
   }
 }
 
@@ -19,7 +19,6 @@
   padding-left: 20px;
   padding-top: 21px;
   background-color: @dark-blue;
-  // background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__logo {
@@ -28,7 +27,8 @@
 
 .page-header__header {
   max-width: 230px;
-  margin: 15% auto;
+  margin: 0 auto;
+  margin-top: 34px;
   font-family: @light-font;
   font-weight: 300;
   font-size: 24px;
@@ -39,16 +39,28 @@
 @media (min-width: @tablet) {
   .page-header {
     min-height: 730px;
+    &--smaller {
+      min-height: 697px;
+    }
   }
 
   .page-header__top-wrapper {
     min-height: 110px;
+  }
+
+  .page-header__header {
+    max-width: 620px;
+    margin-top: 80px;
+    font-size: 50px;
   }
 }
 
 @media (min-width: @desktop) {
   .page-header {
     min-height: 853px;
+    &--smaller {
+      min-height: 394px;
+    }
   }
 
   .page-header__desktop-top {
@@ -58,12 +70,15 @@
     width: 940px;
     min-height: 110px;
     margin: 0 auto;
-    margin-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__top-wrapper {
     width: 147px;
     min-height: 40px;
+  }
+
+  .page-header__header {
+    margin-top: 75px;
   }
 }
