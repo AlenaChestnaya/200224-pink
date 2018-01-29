@@ -1,5 +1,6 @@
 .menu-list {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   padding: 0;
   list-style: none;
   background-color: @dark-blue;
@@ -25,4 +26,29 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @desktop) {
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 625px;
+    background: transparent;
+  }
+
+  .menu-list__item {
+    flex-basis: 150px;
+    border: none;
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .menu-list__link {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: none;
+  }
 }
