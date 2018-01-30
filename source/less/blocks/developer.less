@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 150px;
+  width: 140px;
+  margin: 0 auto;
 }
 
 .developer__text {
@@ -19,12 +20,16 @@
 }
 
 @media (min-width: @tablet) {
-  .developer__text {
-    margin-left: 22px;
+  .developer {
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop) {
+  .developer {
+    width: 160px;
+  }
+
   .developer__text {
     margin-left: 0;
     font-size: 18px;
