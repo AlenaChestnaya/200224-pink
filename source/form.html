@@ -40,7 +40,7 @@
 
       <p class="field-page__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form class="field-page__form comp-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="field-page__fieldset">
+        <fieldset class="field-page__fieldset field-page__fieldset--border">
           <legend class="visually-hidden">Поля ввода имени пользователя</legend>
           <ul class="comp-form__name name-fields">
             <li class="name-fields__item">
@@ -59,8 +59,7 @@
         </fieldset>
 
         <fieldset class="field-page__fieldset achievements-list">
-          <legend class="visually-hidden">Выберите достижения</legend>
-          <h3 class="achievements-list__title">Ваши безбашенные достижения в&nbsp;путешествии</h3>
+          <legend class="achievements-list__title" align="center">Ваши безбашенные достижения в&nbsp;путешествии</legend>
           <ul class="achievements-list__list">
             <li class="achievements-list__item">
               <input class="visually-hidden" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
@@ -89,8 +88,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="field-page__fieldset">
-          <legend class="visually-hidden">Поля ввода контактов пользователя</legend>
+        <fieldset class="field-page__fieldset user-contacts">
+          <legend class="user-contacts__title" align="center">Контактная информация</legend>
           <ul class="comp-form__contacts user-contacts-list">
             <li class="user-contacts-list__item">
               <label class="user-contacts-list__label" for="phone-number">Номер телефона</label>
@@ -104,8 +103,7 @@
         </fieldset>
 
         <fieldset class="field-page__fieldset app-field">
-          <legend class="visually-hidden">Операционная система пользователя</legend>
-          <h3 class="app-field__title">С каким приложением путешествовали?</h3>
+          <legend class="app-field__title" align="center">С каким приложением путешествовали?</legend>
           <ul class="app-field__list app-list">
             <li class="app-list__item">
               <input class="visually-hidden" type="radio" name="operating-system" id="apple" value="apple" checked>
@@ -123,9 +121,8 @@
         </fieldset>
 
         <fieldset class="field-page__fieldset description-field">
-          <legend class="visually-hidden">Комментарии пользователя</legend>
-          <label class="description-field__label" for="description">Опишите свои эмоции</label>
-          <textarea class="description-field__field" name="description" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <legend class="description-field__title" align="center">Опишите свои эмоции</legend>
+          <textarea class="description-field__field" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="comp-form__bottom-box">

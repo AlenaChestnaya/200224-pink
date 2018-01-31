@@ -5,6 +5,7 @@
 
 .field-page__fieldset {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .field-page__title {
@@ -12,4 +13,15 @@
   margin: 0 auto;
   text-align: center;
   line-height: 30px;
+}
+
+@media (min-width: @tablet) {
+  .field-page__fieldset {
+    border: 2px solid @gray-border;
+    border-radius: 1px;
+
+    &--border {
+      border: none;
+    }
+  }
 }
