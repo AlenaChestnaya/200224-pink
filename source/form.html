@@ -9,12 +9,14 @@
   <body>
 
     <header class="page-header page-header--smaller">
-      <div class="page-header__top-wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип проекта">
-        </a>
+      <div class="page-header__desktop-top">
+        <div class="page-header__top-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип проекта">
+          </a>
+        </div>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
+          <!-- <button class="main-nav__toggle" type="button" title="Открыть меню"></button> -->
           <ul class="main-nav__menu menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="index.html">Главная</a>
@@ -58,7 +60,7 @@
 
         <fieldset class="field-page__fieldset achievements-list">
           <legend class="visually-hidden">Выберите достижения</legend>
-          <h3 class="achievements-list__title">Ваши безбашенные достижения в путешествии</h3>
+          <h3 class="achievements-list__title">Ваши безбашенные достижения в&nbsp;путешествии</h3>
           <ul class="achievements-list__list">
             <li class="achievements-list__item">
               <input class="visually-hidden" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
@@ -82,7 +84,7 @@
             </li>
             <li class="achievements-list__item">
               <input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
-              <label class="achievements-list__label" for="hotel">Разгромил отель</label>
+              <label class="achievements-list__label achievements-list__label--short" for="hotel">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
@@ -115,7 +117,7 @@
             </li>
             <li class="app-list__item">
               <input class="visually-hidden" type="radio" name="operating-system" id="windows" value="windows">
-              <label class="app-list__label" for="windows">Windows Phone</label>
+              <label class="app-list__label app-list__label--short" for="windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
@@ -126,10 +128,12 @@
           <textarea class="description-field__field" name="description" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
-        <input class="comp-form__submit form-close" type="submit" value="Отправить форму">
-        <span class="comp-form__remark">
-          <sup class="comp-form__remark--pink">*</sup> — обязательные поля
-        </span>
+        <div class="comp-form__bottom-box">
+          <input class="comp-form__submit form-close" type="submit" value="Отправить форму">
+          <span class="comp-form__remark">
+            <sup class="comp-form__remark--pink">*</sup> — обязательные поля
+          </span>
+        </div>
       </form>
 
     </main>

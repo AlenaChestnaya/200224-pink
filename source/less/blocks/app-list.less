@@ -4,6 +4,26 @@
 }
 
 .app-list__label {
+  display: block;
+  position: relative;
+  min-height: 39px;
+  padding-left: 79px;
+  margin-bottom: 36px;
   font-size: 18px;
   line-height: 30px;
+
+  &--short {
+    margin-bottom: 29px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: -3px;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: lightcoral;
+  }
 }
