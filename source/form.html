@@ -128,7 +128,7 @@
         <div class="comp-form__bottom-box">
           <input class="comp-form__submit form-close" type="submit" value="Отправить форму">
           <span class="comp-form__remark">
-            <sup class="comp-form__remark--pink">*</sup> — обязательные поля
+            <sup class="comp-form__remark comp-form__remark--pink">*</sup> — обязательные <span class="comp-form__remark comp-form__remark--desktop">для заполнения</span> поля
           </span>
         </div>
       </form>
@@ -165,10 +165,12 @@
       <button class="popup__close form-close" type="button">Ок</button>
     </section>
 
-    <section class="popup">
+    <section class="popup popup--success">
       <h2 class="popup__title">Ваша заявка отправлена</h2>
       <p class="popup__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="popup__close form-close">Закрыть окно</button>
+      <div class="popup__back">
+        <button class="popup__close form-close">Закрыть окно</button>
+      </div>
     </section>
 
   </body>

@@ -24,6 +24,10 @@
     top: 0;
     color: @pink;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .comp-form__bottom-box {
@@ -49,5 +53,25 @@
 
   .comp-form__submit {
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .comp-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .comp-form__bottom-box {
+    width: 940px;
+  }
+
+  .comp-form__remark {
+    &--desktop {
+      display: inline-block;
+    }
   }
 }
