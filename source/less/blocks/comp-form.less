@@ -30,3 +30,24 @@
   margin-top: 36px;
   text-align: center;
 }
+
+@media (min-width: @tablet) {
+  .comp-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comp-form__bottom-box {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 36px;
+  }
+
+  .comp-form__submit {
+    margin: 0;
+  }
+}
