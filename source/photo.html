@@ -9,27 +9,31 @@
   <body>
 
     <header class="page-header page-header--smaller">
-      <div class="page-header__top-wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип проекта">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" title="Открыть меню"></button>
-          <ul class="main-nav__menu menu-list">
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="menu-list__item menu-list__item--current">
-              <a class="menu-list__link">Фотографии</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="page-header--back">
+        <div class="page-header__desktop-top">
+          <div class="page-header__top-wrapper">
+            <a class="page-header__logo" href="index.html">
+              <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип проекта">
+            </a>
+          </div>
+          <nav class="main-nav">
+            <!-- <button class="main-nav__toggle" type="button" title="Открыть меню"></button> -->
+            <ul class="main-nav__menu menu-list">
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu-list__item menu-list__item--current">
+                <a class="menu-list__link">Фотографии</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <h1 class="page-header__header">Фотографии пользователей</h1>
     </header>
@@ -42,53 +46,81 @@
         <p class="user-photos__title">Видите, как не хватает ваших?</p>
         <ul class="user-photos__list">
           <li class="user-photos__item user-photos__item--marked">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Анна</b>
-            <span class="user-photos__time">(5 минут назад)</span>
-            <p class="user-photos__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="user-photos__likes">Нравится: 215</span>
+            <img class="user-photos__photo user-photos__photo--marked" src="http://placehold.it/320x137" alt="Фотография пользователя">
+            <div class="user-photos__flex-container user-photos__flex-container--marked">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Анна</b>
+                <span class="user-photos__time">(5 минут назад)</span>
+              </div>
+              <p class="user-photos__comment user-photos__comment--marked">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="user-photos__likes user-photos__likes--marked">Нравится: 215</span>
+            </div>
           </li>
           <li class="user-photos__item">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Левон</b>
-            <span class="user-photos__time">(5 часов назад)</span>
-            <p class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="user-photos__likes">Нравится: 356</span>
+            <img class="user-photos__photo" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            <div class="user-photos__flex-container">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Левон</b>
+                <span class="user-photos__time">(5 часов назад)</span>
+              </div>
+              <p class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="user-photos__likes">Нравится: 356</span>
+            </div>
           </li>
           <li class="user-photos__item">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Антон</b>
-            <span class="user-photos__time">(12 часов назад)</span>
-            <p class="user-photos__comment">Соседи будут рады!</p>
-            <span class="user-photos__likes">Нравится: 666</span>
+            <img class="user-photos__photo" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            <div class="user-photos__flex-container">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Антон</b>
+                <span class="user-photos__time">(12 часов назад)</span>
+              </div>
+              <p class="user-photos__comment">Соседи будут рады!</p>
+              <span class="user-photos__likes">Нравится: 666</span>
+            </div>
           </li>
           <li class="user-photos__item">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Борис</b>
-            <span class="user-photos__time">(20 часов назад)</span>
-            <p class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="user-photos__likes">Нравится: 215</span>
+            <img class="user-photos__photo" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            <div class="user-photos__flex-container">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Борис</b>
+                <span class="user-photos__time">(20 часов назад)</span>
+              </div>
+              <p class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="user-photos__likes">Нравится: 215</span>
+            </div>
           </li>
           <li class="user-photos__item">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Сергей </b>
-            <span class="user-photos__time">(25 часов назад)</span>
-            <p class="user-photos__comment">Самая кубанская в мире!</p>
-            <span class="user-photos__likes">Нравится: 4</span>
+            <img class="user-photos__photo" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            <div class="user-photos__flex-container">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Сергей </b>
+                <span class="user-photos__time">(25 часов назад)</span>
+              </div>
+              <p class="user-photos__comment">Самая кубанская в мире!</p>
+              <span class="user-photos__likes">Нравится: 4</span>
+            </div>
           </li>
           <li class="user-photos__item">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Максим</b>
-            <span class="user-photos__time">(40 часов назад)</span>
-            <p class="user-photos__comment">Где снег-то?</p>
-            <span class="user-photos__likes">Нравится: 150</span>
+            <img class="user-photos__photo" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            <div class="user-photos__flex-container">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Максим</b>
+                <span class="user-photos__time">(40 часов назад)</span>
+              </div>
+              <p class="user-photos__comment">Где снег-то?</p>
+              <span class="user-photos__likes">Нравится: 150</span>
+            </div>
           </li>
           <li class="user-photos__item">
-            <img class="user-photos__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
-            <b class="user-photos__author-name">Надежда</b>
-            <span class="user-photos__time">(45 часов назад)</span>
-            <p class="user-photos__comment">Всем GM и взаимные лайки!</p>
-            <span class="user-photos__likes">Нравится: 2560</span>
+            <img class="user-photos__photo" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            <div class="user-photos__flex-container">
+              <div class="user-photos__label">
+                <b class="user-photos__author-name">Надежда</b>
+                <span class="user-photos__time">(45 часов назад)</span>
+              </div>
+              <p class="user-photos__comment">Всем GM и взаимные лайки!</p>
+              <span class="user-photos__likes">Нравится: 2560</span>
+            </div>
           </li>
         </ul>
       </section>
@@ -97,25 +129,37 @@
         <h2 class="visually-hidden">Опубликовать свою фотографию</h2>
         <p class="post__title">Затмите их всех!</p>
         <p class="post__title">Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="post__wrapper">
+        <div class="post__back">
           <img class="post__photo" src="http://placehold.it/280x374" alt="Ваша фотография">
-          <ul class="post__editor photo-editor">
-            <li class="photo-editor__item">
-              <button class="photo-editor__icon photo-editor__icon--crop photo-editor__icon--active" type="button" title="Обрезать"></button>
-            </li>
-            <li class="photo-editor__item">
-              <button class="photo-editor__icon photo-editor__icon--fill" type="button" title="Заливка"></button>
-            </li>
-            <li class="photo-editor__item">
-              <button class="photo-editor__icon photo-editor__icon--contrast" type="button" title="Контраст"></button>
-            </li>
-          </ul>
-          <div class="post__range-controls range-controls">
-            <span class="range-controls__bar"></span>
-            <span class="range-controls__toggle"></span>
+          <div class="post__container">
+            <ul class="post__editor photo-editor">
+              <li class="photo-editor__item photo-editor__item--active">
+                <button class="photo-editor__icon photo-editor__icon--crop photo-editor__icon--active" type="button" title="Обрезать"></button>
+                <div class="photo-editor__range-controls photo-editor__range-controls--active range-controls">
+                  <span class="range-controls__bar"></span>
+                  <span class="range-controls__toggle"></span>
+                </div>
+              </li>
+              <li class="photo-editor__item">
+                <button class="photo-editor__icon photo-editor__icon--fill" type="button" title="Заливка"></button>
+                <div class="photo-editor__range-controls range-controls">
+                  <span class="range-controls__bar"></span>
+                  <span class="range-controls__toggle"></span>
+                </div>
+              </li>
+              <li class="photo-editor__item">
+                <button class="photo-editor__icon photo-editor__icon--contrast" type="button" title="Контраст"></button>
+                <div class="photo-editor__range-controls range-controls">
+                  <span class="range-controls__bar"></span>
+                  <span class="range-controls__toggle"></span>
+                </div>
+              </li>
+            </ul>
+            <div class="post__buttons">
+              <button class="post__post-button button button--pink" type="button">Запостить</button>
+              <button class="post__reset-button button button--pale" type="reset">Отмена</button>
+            </div>
           </div>
-          <button class="post__post-button button button--pink" type="button">Запостить</button>
-          <button class="post__reset-button button button--pale" type="reset">Отмена</button>
         </div>
       </section>
 

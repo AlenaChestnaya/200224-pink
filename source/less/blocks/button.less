@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding-top: 15px;
+  padding-top: 16px;
   box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
@@ -11,22 +11,51 @@
   border-style: solid;
   border-radius: 27px;
   background-color: transparent;
+
   &--white {
     width: 281px;
     padding-bottom: 13px;
     border-color: #ffffff;
     color: #ffffff;
   }
+
   &--pink {
     width: 280px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
     border-color: @pink;
     color: @pink;
   }
+
   &--pale {
     width: 280px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
     border-color: #dddfe0;
     color: #dddfe0;
+  }
+}
+
+@media (min-width: @tablet) {
+  .button {
+
+    &--pink {
+      width: 260px;
+    }
+
+    &--pale {
+      width: 260px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .button {
+
+    &--pink {
+      width: 183px;
+    }
+
+    &--pale {
+      width: 183px;
+    }
   }
 }

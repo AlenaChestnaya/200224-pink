@@ -1,5 +1,7 @@
 .user-photos {
-  padding-top: 50px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 46px;
   text-align: center;
 }
 
@@ -10,7 +12,7 @@
 
 .user-photos__list {
   margin: 0;
-  margin-top: 54px;
+  margin-top: 48px;
   padding: 0;
   list-style: none;
 }
@@ -26,6 +28,11 @@
 .user-photos__photo {
   display: block;
   margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.user-photos__photo--marked {             /*  Только пока нет нормальной картинки!!!!  */
+  height: 137px;
 }
 
 .user-photos__time {
@@ -35,8 +42,112 @@
   text-transform: uppercase;
 }
 
+.user-photos__comment {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.user-photos__author-name {
+  margin: 0;
+}
+
 .user-photos__likes {
   font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
   color: @pink;
+}
+
+.user-photos__flex-container {
+  padding-left: 17px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: @tablet) {
+  .user-photos {
+    min-width: @tablet;
+    padding-top: 100px;
+  }
+
+  .user-photos__title {
+    font-size: 18px;
+  }
+
+  .user-photos__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .user-photos__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px;
+    min-height: 455px;
+    margin: 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    &--marked {
+      flex-basis: 620px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .user-photos__flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 27px;
+    padding-right: 29px;
+    padding-bottom: 25px;
+
+    &--marked {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .user-photos__comment {
+    flex-grow: 1;
+  }
+
+  .user-photos__comment--marked {
+    order: 3;
+  }
+
+  .user-photos__likes--marked {
+    order: 2;
+  }
+
+  .user-photos__photo {             /*  Только пока нет нормальной картинки!!!!    */
+    height: 300px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .user-photos {
+    min-width: @desktop;
+  }
+
+  .user-photos__list {
+    margin-top: 92px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .user-photos__item {
+    margin-bottom: 54px;
+
+    &--marked {
+      flex-basis: 940px;
+    }
+  }
 }

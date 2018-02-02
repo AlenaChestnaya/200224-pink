@@ -1,15 +1,65 @@
 .field-page {
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding-top: 45px;
+  padding-bottom: 64px;
 }
 
 .field-page__fieldset {
-  margin: 0;
-  padding-bottom: 42px;
+  box-sizing: border-box;
 }
 
 .field-page__title {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   text-align: center;
   line-height: 30px;
+}
+
+.field-page__back {
+  padding-top: 38px;
+  background-color: @gray-back;
+}
+
+@media (min-width: @tablet) {
+  .field-page__title {
+    width: 550px;
+    margin-top: 46px;
+    margin-bottom: 62px;
+    font-size: 18px;
+  }
+
+  .field-page__fieldset {
+    border: 2px solid @gray-border;
+    border-radius: 1px;
+
+    &--border {
+      border: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .field-page__back {
+    padding-top: 0;
+    background-color: transparent;
+
+    &--achievements {
+      order: 4;
+    }
+
+    &--app {
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .field-page__title {
+    width: 765px;
+    margin-top: 47px;
+  }
+
+  .field-page__fieldset {
+    &--border {
+      padding-left: 0;
+    }
+  }
 }

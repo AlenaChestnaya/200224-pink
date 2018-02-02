@@ -1,0 +1,29 @@
+.user-contacts__title {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .user-contacts {
+    order: 3;
+    min-width: 620px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    padding-top: 0;
+    padding-bottom: 2px;
+  }
+
+  .user-contacts__title {
+    display: block;
+    padding-left: 32px;
+    padding-right: 33px;
+    .label();
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .user-contacts {
+    width: 940px;
+    margin-top: -6px;
+  }
+}

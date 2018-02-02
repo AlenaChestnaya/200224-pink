@@ -1,5 +1,7 @@
 .post {
-  padding-top: 46px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 23px;
   padding-bottom: 41px;
   text-align: center;
 }
@@ -9,17 +11,22 @@
   line-height: 30px;
 }
 
-.post__wrapper {
-  margin-top: 45px;
+.post__back {
+  margin-top: 48px;
+  padding-top: 20px;
   background-color: @gray-back;
+}
+
+.post__photo {
+  margin-bottom: 38px;
 }
 
 .photo-editor {
   margin: 0 auto;
 }
 
-.post__range-controls {
-  border-bottom: 1px solid #dddfe0;
+.post__buttons {
+  margin-top: 38px;
 }
 
 .post__post-button {
@@ -29,4 +36,84 @@
 
 .post__reset-button {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet) {
+  .post {
+    min-width: @tablet;
+    padding-top: 48px;
+  }
+
+  .post__title {
+    font-size: 18px;
+  }
+
+  .post__back {
+    display: flex;
+    justify-content: center;
+    margin-top: 73px;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .post__photo {
+    margin-bottom: 0;
+    width: 300px;                   /*   Только пока нет нужной картинки!!!!!!   */
+    height: 400px;
+  }
+
+  .post__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-left: 25px;
+  }
+
+  .post__buttons {
+    margin-top: auto;
+    padding-left: 2px;
+  }
+
+  .post__post-button {
+    margin-bottom: 24px;
+    margin-left: 0;
+  }
+
+  .post__reset-button {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .post {
+    min-width: 940px;
+    padding-top: 42px;
+  }
+
+  .post__back {
+    margin-top: 69px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .post__container {
+    margin-left: 42px;
+    padding-left: 48px;
+  }
+
+  .post__buttons {
+    display: flex;
+  }
+
+  .post__post-button {
+    margin-bottom: 0;
+  }
+
+  .post__reset-button {
+    margin-right: 0;
+  }
+
+  .post__photo {
+    margin-left: 20px;
+  }
 }

@@ -1,16 +1,99 @@
 .comp-form__name {
-  margin-bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.comp-form__contacts {
+  margin: 0 auto;
+  margin-top: 26px;
+  margin-bottom: 35px;
 }
 
 .comp-form__submit {
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .comp-form__remark {
   display: inline-block;
   line-height: 30px;
   text-transform: uppercase;
+
   &--pink {
+    font-size: 100%;
+    top: 0;
     color: @pink;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.comp-form__bottom-box {
+  margin-top: 36px;
+  text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .comp-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comp-form__name {
+    margin-top: 4px;
+  }
+
+  .comp-form__contacts {
+    margin-bottom: 0;
+  }
+
+  .comp-form__bottom-box {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 67px;
+  }
+
+  .comp-form__submit {
+    margin: 0;
+  }
+
+  .comp-form__remark {
+    padding-top: 3px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .comp-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .comp-form__name {
+    margin-top: 17px;
+  }
+
+  .comp-form__contacts {
+    margin-top: 27px;
+  }
+
+  .comp-form__bottom-box {
+    width: 940px;
+    margin-top: 65px;
+  }
+
+  .comp-form__remark {
+    padding-top: 2px;
+    &--desktop {
+      display: inline-block;
+    }
   }
 }

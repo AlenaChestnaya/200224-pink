@@ -1,4 +1,8 @@
 .app-field {
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 0;
+  box-sizing: border-box;
   background-color: @gray-back;
 }
 
@@ -7,4 +11,47 @@
   text-align: center;
   .label();
   line-height: 18px;
+}
+
+.app-field__list {
+  margin: 0 auto;
+  margin-top: 38px;
+}
+
+@media (min-width: @tablet) {
+  .app-field {
+    min-width: 620px;
+    padding-left: 59px;
+    padding-bottom: 21px;
+    margin-bottom: 51px;
+    background-color: transparent;
+  }
+
+  .app-field__title {
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 26px;
+  }
+
+  .app-field__list {
+    margin-top: 3px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .app-field {
+    min-width: 434px;
+    margin: 0;
+    padding-left: 51px;
+  }
+
+  .app-field__title {
+    padding-top: 3px;
+  }
+
+  .app-field__list {
+    margin-top: 44px;
+    margin-left: 23px;
+  }
 }
