@@ -14,7 +14,7 @@
   list-style: none;
 }
 
-.achievements-list__title {        /* Можно натянуть фон на леженд через отрицательный нижний маргин */
+.achievements-list__title {
   width: 220px;
   margin: 0 auto;
   .label();
@@ -76,15 +76,29 @@
 
 @media (min-width: @desktop) {
   .achievements-list {
-    min-width: 940px;
+    width: 940px;
     padding: 0;
+    overflow: auto;
   }
 
   .achievements-list__list {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 940px;
-    height: 232px;
+    width: 260px;
+    height: 142px;
+    margin-top: 48px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+
+  .achievements-list__title {
+    padding-right: 2px;
+  }
+
+  .achievements-list__label {
+    margin-right: 58px;
+    margin-bottom: 0;
   }
 }

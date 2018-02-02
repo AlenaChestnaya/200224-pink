@@ -33,16 +33,21 @@
   .menu-list {
     display: flex;
     justify-content: space-between;
-    min-width: 625px;
+    min-width: 620px;
     background: transparent;
   }
 
   .menu-list__item {
-    flex-basis: 150px;
+    width: auto;
+    margin-right: 80px;
     border: none;
 
     &:first-child {
       border: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 
