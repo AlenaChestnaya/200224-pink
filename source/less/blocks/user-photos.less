@@ -19,20 +19,25 @@
 
 .user-photos__item {
   margin: 20px;
-  margin-top: 0;
   text-align: start;
   line-height: 24px;
   background-color: @gray-back;
+
+  // &--marked {
+  //   margin: 0 auto;
+  //   // overflow: visible;
+  // }
 }
 
 .user-photos__photo {
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-bottom: 18px;
-}
 
-.user-photos__photo--marked {             /*  Только пока нет нормальной картинки!!!!  */
-  height: 137px;
+  // &--marked {
+  //   width: 100vw;
+  //   max-width: auto;
+  // }
 }
 
 .user-photos__time {
@@ -59,7 +64,8 @@
 }
 
 .user-photos__flex-container {
-  padding-left: 17px;
+  padding-left: 18px;
+  padding-right: 22px;
   padding-bottom: 20px;
 }
 
@@ -125,10 +131,6 @@
 
   .user-photos__likes--marked {
     order: 2;
-  }
-
-  .user-photos__photo {             /*  Только пока нет нормальной картинки!!!!    */
-    height: 300px;
   }
 }
 

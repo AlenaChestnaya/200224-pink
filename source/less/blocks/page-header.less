@@ -4,27 +4,28 @@
   padding: 0;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: center;
+  background-position: center;
   box-sizing: border-box;
 
   &--smaller {
     min-height: 496px;
-    background-position-y: 260px;
+    background-position-y: 258px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-size: 1400px auto;
   }
 }
 
 .page-header__top-wrapper {
-  width: 100%;
-  min-height: 69px;
+  // width: 100%;
+  // min-height: 69px;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-top: 21px;
+  padding-top: 22px;
+  padding-bottom: 21px;
   background-color: @dark-blue;
-}
-
-.page-header__logo {
-  height: 22px;
 }
 
 .page-header__header {
@@ -41,36 +42,55 @@
 @media (min-width: @tablet) {
   .page-header {
     min-height: 730px;
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-position-y: bottom;
 
     &--smaller {
       min-height: 697px;
-      background-position-y: 190px;
+      background-position-y: 240px;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: 2400px auto;
     }
   }
 
-  .page-header__top-wrapper {
-    min-height: 110px;
-  }
+  // .page-header__top-wrapper {
+  //   min-height: 110px;
+  // }
 
   .page-header__header {
     max-width: 620px;
     margin-top: 74px;
     font-size: 50px;
   }
+
+  .page-header__logo-image {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 @media (min-width: @desktop) {
   .page-header {
     min-height: 853px;
+    background-image: url('../img/bg-back-desktop@1x.jpg');
+    background-position-y: bottom;
 
     &--smaller {
       min-height: 394px;
-      background-position-y: center;
+      background-position-y: top;
     }
 
     &--back {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: 5120px auto;
     }
   }
 
@@ -84,9 +104,10 @@
   }
 
   .page-header__top-wrapper {
-    width: 147px;
-    min-height: 40px;
-    padding-top: 0;       /* Только пока нет картинки!!! */
+    padding: 0;
+  //   width: 147px;
+  //   // min-height: 40px;
+  //   // padding-top: 0;       /* Только пока нет картинки!!! */
   }
 
   .page-header__header {

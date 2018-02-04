@@ -13,7 +13,11 @@
         <div class="page-header__desktop-top">
           <div class="page-header__top-wrapper">
             <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип проекта">
+              <picture>
+                <source media="(min-width: 960px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип проекта">
+              </picture>
             </a>
           </div>
           <nav class="main-nav">
@@ -145,7 +149,10 @@
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <a class="social__logo" href="index.html">
-          <img class="social__logo-image" src="#" alt="Логотип проекта Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="../img/logo-pink-blue-desktop.svg">
+            <img class="social__logo-image" src="../img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип проекта Пинк">
+          </picture>
         </a>
         <ul class="social__list social-icons">
           <li>
