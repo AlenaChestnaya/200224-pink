@@ -1,6 +1,5 @@
 .download {
   position: relative;
-  margin-top: 396px;
   box-sizing: border-box;
   text-align: center;
   background-color: #1d2631;
@@ -8,11 +7,19 @@
   &::before {
     content: '';
     position: absolute;
-    top: -285px;
+    bottom: 268px;
     left: 0;
     width: 255px;
     height: 290px;
-    background: url('../img/iphone-hand-mobile@1x.png') no-repeat;
+    background-image: url('../img/iphone-hand-mobile@1x.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .download::before {
+    background-image: url('../img/iphone-hand-mobile@2x.png');
+    background-size: 516px auto;
   }
 }
 
@@ -55,18 +62,16 @@
   .download {
     width: @tablet;
     height: 546px;
-    margin: 0 auto;
     z-index: 1;
     background-color: transparent;
 
     &::before {
-      width: 470px;
-      height: 546px;
+      width: 700px;
+      height: 545px;
       z-index: -1;
-      top: 0;
-      left: auto;
-      right: 0;
-      background-size: 100%;
+      left: -30px;
+      bottom: 0;
+      background-image: url('../img/iphone-hand-tablet@1x.png');
     }
   }
 
@@ -90,14 +95,25 @@
   }
 }
 
+@media (min-width: @tablet) and (min-resolution: @retina-dpi),
+(min-width: @tablet) and (min-resolution: @retina-dppx) {
+  .download::before {
+    background-image: url('../img/iphone-hand-tablet@2x.png');
+    background-size: 1400px auto;
+  }
+}
+
 @media (min-width: @desktop) {
   .download {
     width: @desktop;
     min-height: 645px;
+    margin-top: 98px;
 
     &::before {
-      width: 560px;
+      width: 1050px;
       height: 645px;
+      left: 25px;
+      background-image: url('../img/iphone-hand-desktop@1x.png');
     }
   }
 
@@ -113,5 +129,13 @@
   .download__text {
     margin-top: 60px;
     margin-bottom: 124px;
+  }
+}
+
+@media (min-width: @desktop) and (min-resolution: @retina-dpi),
+(min-width: @desktop) and (min-resolution: @retina-dppx) {
+  .download::before {
+    background-image: url('../img/iphone-hand-desktop@2x.png');
+    background-size: 2100px auto;
   }
 }
