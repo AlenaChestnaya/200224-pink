@@ -1,5 +1,9 @@
 .research {
   display: none;
+  width: 100%;
+}
+
+.research__wrapper {
   width: 620px;
   margin: 0 auto;
   padding-top: 59px;
@@ -7,23 +11,14 @@
 }
 
 .research__content {
-  position: relative;
-  margin-left: 310px;
+  width: 308px;
+  margin-left: 70px;
   padding-top: 43px;
   padding-bottom: 31px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: -307px;
-    bottom: 0;
-    width: 238px;
-    height: 276px;
-    background-color: blueviolet;
-  }
 }
 
 .research__title {
+  width: 200px;
   margin-top: 0;
   font-family: @bold-font;
   font-weight: 700;
@@ -41,38 +36,65 @@
   color: @pink;
 }
 
+.research__image {
+  position: relative;
+  min-width: 238px;
+  height: 276px;
+  background-image: url('../img/icon-editor-diagram-fill.svg'), url('../img/icon-timer.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 55px, center;
+  background-size: 202px, 238px;
+
+  &::before {
+    content: "24";
+    position: absolute;
+    top: 80px;
+    left: 63px;
+    font-family: @bold-font;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150px;
+    color: @pink;
+  }
+}
+
 @media (min-width: @tablet) {
   .research {
     display: block;
+  }
+
+  .research__wrapper {
+    display: flex;
   }
 }
 
 @media (min-width: @desktop) {
   .research {
-    width: 960px;
-    padding-top: 70px;
-    padding-bottom: 67px;
+    width: 100%;
     background-color: @gray-back;
   }
 
+  .research__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 67px;
+  }
+
   .research__content {
-    margin-left: 375px;
+    width: 530px;
+    margin-left: 67px;
     padding-top: 99px;
     padding-bottom: 51px;
-    padding-right: 50px;
-
-    &::before {
-      width: 298px;
-      height: 345px;
-      left: -365px;
-    }
   }
 
   .research__title {
+    width: auto;
     line-height: 30px;
   }
 
   .research__description {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -80,5 +102,19 @@
   .research__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .research__image {
+    width: 298px;
+    height: 345px;
+    background-size: auto, auto;
+    background-position: 50% 70px, center;
+
+    &::before {
+      top: 96px;
+      left: 80px;
+      font-size: 120px;
+      line-height: 187px;
+    }
   }
 }
