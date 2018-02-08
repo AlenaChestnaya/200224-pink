@@ -102,23 +102,44 @@
         <h2 class="visually-hidden">Отзывы на работу приложения</h2>
         <div class="review__container">
           <button class="review__toggle review__toggle--prev" type="button" title="Предыдущий отзыв"></button>
-          <blockquote class="review__item">
-            <cite class="review__author-name">Николай Петров
-              <span class="review__remark">25 лет, водитель трамвая</span>
-            </cite>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
+              <blockquote class="review__item">
+              <cite class="review__author-name">Николай Петров
+                <span class="review__remark">25 лет, водитель трамвая</span>
+              </cite>
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+
+            <!-- <li>
+              <blockquote class="review__item">
+              <cite class="review__author-name">Дмитрий Комаров
+                <span class="review__remark">43 года, врач-реаниматолог</span>
+              </cite>
+              <p class="review__text">«Отличное приложение, начал использовать на работе - день пролетает незаметно!»</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote class="review__item">
+              <cite class="review__author-name">Игнат Ибрагимов
+                <span class="review__remark">38 лет, директор винзавода</span>
+              </cite>
+              <p class="review__text">«Всегда захожу в Пинк, когда креативлю с новой продукцией, очень выручает!»</p>
+              </blockquote>
+            </li> -->
+
           <button class="review__toggle review__toggle--next" type="button" title="Следующий отзыв"></button>
         </div>
         <ul class="review__slider slider-toggles">
           <li class="slider-toggles__item">
-            <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">1</button>
+            <input class="visually-hidden" type="radio" name="switcher" value="1" id="slide-1">
+            <label class="slider-toggles__toggle slider-toggles__toggle--active" for="slide-1">Первый слайд</label>
           </li>
           <li class="slider-toggles__item">
-            <button class="slider-toggles__toggle" type="button">2</button>
+            <input class="visually-hidden" type="radio" name="switcher" value="2" id="slide-2">
+            <label class="slider-toggles__toggle" for="slide-2">Второй слайд</label>
           </li>
           <li class="slider-toggles__item">
-            <button class="slider-toggles__toggle" type="button">3</button>
+            <input class="visually-hidden" type="radio" name="switcher" value="3" id="slide-3">
+            <label class="slider-toggles__toggle" for="slide-3">Третий слайд</label>
           </li>
         </ul>
       </section>
