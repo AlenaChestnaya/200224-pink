@@ -2,13 +2,37 @@
   display: none;
   width: 240px;
   height: 14px;
-  background-color: palevioletred;
 
   &--active {
     display: block;
     position: absolute;
     bottom: 28px;
     left: 50%;
+  }
+
+  &:active > .range-controls__bar::before {
+    background-color: @pink;
+  }
+}
+
+.range-controls__bar {
+  display: block;
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin-top: 6px;
+  background-color: @dark-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 33px;
+    width: 10px;
+    height: 10px;
+    background-color: @gray-back;
+    border: 2px solid @pink;
+    border-radius: 50%;
   }
 }
 
@@ -17,5 +41,43 @@
     display: block;
     position: initial;
     width: 202px;
+  }
+
+  .range-controls__bar {
+    width: 202px;
+
+    &--crop::before {
+      right: 42px;
+    }
+
+    &--fill::before {
+      right: 163px;
+    }
+
+    &--contrast::before {
+      right: 92px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .range-controls {
+    width: 288px;
+  }
+
+  .range-controls__bar {
+    width: 288px;
+
+    &--crop::before {
+      right: 203px;
+    }
+
+    &--fill::before {
+      right: 27px;
+    }
+
+    &--contrast::before {
+      right: 114px;
+    }
   }
 }
