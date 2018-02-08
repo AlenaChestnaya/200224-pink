@@ -56,10 +56,23 @@
 }
 
 .user-photos__likes {
+  position: relative;
+  padding-left: 32px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: @pink;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url('../img/icon-heart.svg');
+    background-repeat: no-repeat;
+  }
 }
 
 .user-photos__flex-container {
@@ -137,6 +150,22 @@
 
   .user-photos__likes--marked {
     order: 2;
+  }
+
+  .user-photos__likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+
+    &::before {
+      order: 2;
+      position: initial;
+    }
+
+    &--marked {
+      min-width: 120px;
+    }
   }
 }
 

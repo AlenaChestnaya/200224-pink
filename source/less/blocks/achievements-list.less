@@ -42,8 +42,25 @@
     top: -4px;
     width: 39px;
     height: 39px;
-    background: greenyellow;
+    background-color: #ffffff;
+    border: 2px solid @gray-border;
+    border-radius: 1px;
   }
+
+  &:hover::before {
+    border-color: @dark-blue;
+  }
+
+  &:active::before {
+    border-color: @pink;
+  }
+}
+
+.achievements-list__input:checked + .achievements-list__label::before {
+  background-image: url('../img/icon-yes.svg');
+  fill: red;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet) {
