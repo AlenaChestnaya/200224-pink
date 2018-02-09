@@ -19,30 +19,6 @@
     .label();
     line-height: 30px;
   }
-
-  .user-contacts-list__item {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 6px;
-      width: 60px;
-      height: 59px;
-      background-color: @gray-border;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--phone::after {
-      background-image: url("../img/icon-phone.svg")
-    }
-
-    &--mail::after {
-      background-image: url("../img/icon-mail.svg")
-    }
-  }
 }
 
 @media (min-width: @desktop) {

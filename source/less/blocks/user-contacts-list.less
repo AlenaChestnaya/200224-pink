@@ -15,6 +15,7 @@
   width: 100%;
   height: 63px;
   padding-left: 20px;
+  padding-right: 70px;
   margin-top: 4px;
   margin-bottom: 18px;
   box-sizing: border-box;
@@ -30,6 +31,14 @@
     color: @dark-blue;
     opacity: 1;
   }
+
+  &:hover {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -38,8 +47,29 @@
   }
 
   .user-contacts-list__item {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 2px;
+      top: 6px;
+      width: 60px;
+      height: 59px;
+      background-color: @gray-border;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--phone::after {
+      background-image: url("../img/icon-phone.svg")
+    }
+
+    &--mail::after {
+      background-image: url("../img/icon-mail.svg")
+    }
   }
 
   .user-contacts-list__input {
