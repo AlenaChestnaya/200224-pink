@@ -124,7 +124,7 @@
     display: block;
     width: 22px;
     height: 41px;
-    background: yellow;
+    background-color: transparent;
     border: none;
 
     &--prev {
@@ -133,6 +133,18 @@
 
     &--next {
       margin-right: 10px;
+    }
+
+    svg {
+      fill: #bec2c7;
+    }
+
+    &:hover svg {
+      fill: #7e868f;
+    }
+
+    &:active svg {
+      fill: #e9ebec;
     }
   }
 }
