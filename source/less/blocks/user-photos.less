@@ -70,7 +70,7 @@
     left: 0;
     width: 13px;
     height: 12px;
-    background-image: url('../img/icon-heart.svg');
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
   }
 }
@@ -148,10 +148,6 @@
     order: 3;
   }
 
-  .user-photos__likes--marked {
-    order: 2;
-  }
-
   .user-photos__likes {
     display: flex;
     justify-content: space-between;
@@ -165,6 +161,7 @@
 
     &--marked {
       min-width: 120px;
+      order: 2;
     }
   }
 }

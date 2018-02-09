@@ -8,6 +8,12 @@
   </head>
   <body>
 
+    <svg style="display: none">
+      <symbol id="icon-yes" viewbox="-82.357 4.875 22 16">
+        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+      </symbol>
+    </svg>
+
     <header class="page-header page-header--smaller">
       <div class="page-header--back">
         <div class="page-header__desktop-top">
@@ -70,27 +76,51 @@
             <ul class="achievements-list__list">
               <li class="achievements-list__item">
                 <input class="visually-hidden achievements-list__input" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
-                <label class="achievements-list__label" for="shark-selfie">Сделал селфи с акулой</label>
+                <label class="achievements-list__label" for="shark-selfie">
+                  <svg class="achievements-list__icon-yes" width="22" height="16">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                Сделал селфи с акулой</label>
               </li>
               <li class="achievements-list__item">
                 <input class="visually-hidden achievements-list__input" type="checkbox" name="beach" id="beach" checked>
-                <label class="achievements-list__label" for="beach">Обгорел на пляже</label>
+                <label class="achievements-list__label" for="beach">
+                  <svg class="achievements-list__icon-yes" width="22" height="16">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                Обгорел на пляже</label>
               </li>
               <li class="achievements-list__item">
                 <input class="visually-hidden achievements-list__input" type="checkbox" name="chuck-norris" id="chuck-norris">
-                <label class="achievements-list__label" for="chuck-norris">Видел Чака Норриса</label>
+                <label class="achievements-list__label" for="chuck-norris">
+                  <svg class="achievements-list__icon-yes" width="22" height="16">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                Видел Чака Норриса</label>
               </li>
               <li class="achievements-list__item">
                 <input class="visually-hidden achievements-list__input" type="checkbox" name="gift" id="gift">
-                <label class="achievements-list__label" for="gift">Накупил сувениров</label>
+                <label class="achievements-list__label" for="gift">
+                  <svg class="achievements-list__icon-yes" width="22" height="16">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                Накупил сувениров</label>
               </li>
               <li class="achievements-list__item">
                 <input class="visually-hidden achievements-list__input" type="checkbox" name="tower" id="tower" checked>
-                <label class="achievements-list__label" for="tower">Удержал башню</label>
+                <label class="achievements-list__label" for="tower">
+                  <svg class="achievements-list__icon-yes" width="22" height="16">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                Удержал башню</label>
               </li>
               <li class="achievements-list__item">
                 <input class="visually-hidden achievements-list__input" type="checkbox" name="hotel" id="hotel">
-                <label class="achievements-list__label achievements-list__label--short" for="hotel">Разгромил отель</label>
+                <label class="achievements-list__label achievements-list__label--short" for="hotel">
+                  <svg class="achievements-list__icon-yes" width="22" height="16">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
@@ -99,11 +129,11 @@
         <fieldset class="field-page__fieldset user-contacts">
           <legend class="user-contacts__title" align="center">Контактная информация</legend>
           <ul class="comp-form__contacts user-contacts-list">
-            <li class="user-contacts-list__item">
+            <li class="user-contacts-list__item user-contacts-list__item--phone">
               <label class="user-contacts-list__label" for="phone-number">Номер телефона</label>
               <input class="user-contacts-list__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
             </li>
-            <li class="user-contacts-list__item">
+            <li class="user-contacts-list__item user-contacts-list__item--mail">
               <label class="user-contacts-list__label" for="email">Адрес почты</label>
               <input class="user-contacts-list__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
             </li>

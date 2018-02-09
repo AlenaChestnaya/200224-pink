@@ -56,11 +56,19 @@
   }
 }
 
-.achievements-list__input:checked + .achievements-list__label::before {
-  background-image: url('../img/icon-yes.svg');
-  fill: red;
-  background-position: center;
-  background-repeat: no-repeat;
+.achievements-list__icon-yes {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: 11px;
+  top: 9px;
+  width: 22px;
+  height: 16px;
+  fill: #d22856;
+}
+
+.achievements-list__input:checked + .achievements-list__label .achievements-list__icon-yes {
+  display: block;
 }
 
 @media (min-width: @tablet) {
