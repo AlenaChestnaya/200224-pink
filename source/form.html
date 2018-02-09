@@ -12,6 +12,10 @@
       <symbol id="icon-yes" viewbox="-82.357 4.875 22 16">
         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
       </symbol>
+      <symbol id="icon-checkbox" viewBox="0 0 36 36">
+        <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+        <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+      </symbol>
     </svg>
 
     <header class="page-header page-header--smaller">
@@ -145,16 +149,28 @@
             <legend class="app-field__title" align="center">С каким приложением путешествовали?</legend>
             <ul class="app-field__list app-list">
               <li class="app-list__item">
-                <input class="visually-hidden" type="radio" name="operating-system" id="apple" value="apple" checked>
-                <label class="app-list__label" for="apple">Pink для iOS</label>
+                <input class="visually-hidden app-list__input" type="radio" name="operating-system" id="apple" value="apple" checked>
+                <label class="app-list__label" for="apple">
+                  <svg class="app-list__icon-check" width="36" height="36">
+                    <use xlink:href="#icon-checkbox"></use>
+                  </svg>
+                  Pink для iOS</label>
               </li>
               <li class="app-list__item">
-                <input class="visually-hidden" type="radio" name="operating-system" id="android" value="android">
-                <label class="app-list__label" for="android">Pink на Android</label>
+                <input class="visually-hidden app-list__input" type="radio" name="operating-system" id="android" value="android">
+                <label class="app-list__label" for="android">
+                  <svg class="app-list__icon-check" width="36" height="36">
+                    <use xlink:href="#icon-checkbox"></use>
+                  </svg>
+                Pink на Android</label>
               </li>
               <li class="app-list__item">
-                <input class="visually-hidden" type="radio" name="operating-system" id="windows" value="windows">
-                <label class="app-list__label app-list__label--short" for="windows">Windows Phone</label>
+                <input class="visually-hidden app-list__input" type="radio" name="operating-system" id="windows" value="windows">
+                <label class="app-list__label app-list__label--short" for="windows">
+                  <svg class="app-list__icon-check" width="36" height="36">
+                    <use xlink:href="#icon-checkbox"></use>
+                  </svg>
+                Windows Phone</label>
               </li>
             </ul>
           </fieldset>
