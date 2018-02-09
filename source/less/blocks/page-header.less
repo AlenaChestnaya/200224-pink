@@ -28,6 +28,23 @@
   background-color: @dark-blue;
 }
 
+.page-header__logo svg {
+  width: 75px;
+  height: 23px;
+}
+
+.page-header__logo-pink {
+  width: 75px;
+  height: 23px;
+}
+
+.page-header__logo-point,
+.page-header__logo-chic-glasses,
+.page-header__logo-glasses,
+.page-header__logo-sparkles {
+  display: none;
+}
+
 .page-header__header {
   max-width: 230px;
   margin: 0 auto;
@@ -70,9 +87,13 @@
     font-size: 50px;
   }
 
-  .page-header__logo-image {
+  .page-header__logo svg {
     width: 147px;
     height: 40px;
+  }
+
+  .page-header__logo-glasses {
+    display: inline-block;
   }
 
   .page-header__download {
@@ -117,6 +138,16 @@
   //width: 147px;
   //min-height: 40px;
   //padding-top: 0;       /* Только пока нет картинки!!! */
+  }
+
+  .page-header__logo-point,
+  .page-header__logo-chic-glasses,
+  .page-header__logo-sparkles {
+    display: inline-block;
+  }
+
+  .page-header__logo-glasses {
+    display: none;
   }
 
   .page-header__header {
