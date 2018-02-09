@@ -16,7 +16,18 @@
   width: 27px;
   height: 34px;
   margin-left: auto;
-  background: url("../img/logo-htmlacademy.svg") no-repeat center;
+
+  &:hover svg {
+    fill: @dark-blue;
+  }
+
+  &:active svg {
+    fill: #bec2c7;
+  }
+}
+
+.developer__link svg {
+  fill: @pink;
 }
 
 @media (min-width: @tablet) {
