@@ -24,10 +24,29 @@
   line-height: 24px;
 
   &--marked {
+    position: relative;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.user-photos__item--marked::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  background-color: @pink;
+  font-family: @bold-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .user-photos__photo {
@@ -125,6 +144,10 @@
     }
   }
 
+  .user-photos__item--marked::before {
+    top: 57px;
+  }
+
   .user-photos__flex-container {
     display: flex;
     flex-direction: column;
@@ -179,6 +202,11 @@
   .user-photos__item {
     margin-bottom: 54px;
     margin-left: 0;
+
+    &--marked::before {
+      top: 54px;
+      right: 130px;
+    }
   }
 
   .user-photos__flex-container {
