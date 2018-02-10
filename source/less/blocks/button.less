@@ -10,6 +10,7 @@
   border-style: solid;
   border-radius: 27px;
   background-color: transparent;
+  cursor: pointer;
 
   &--white {
     width: 281px;
@@ -30,6 +31,41 @@
     padding-bottom: 15px;
     border-color: #dddfe0;
     color: #dddfe0;
+  }
+}
+
+.button--white {
+  &:hover {
+    background-color: #ffffff;
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.button--pink {
+  &:hover {
+    background-color: @pink;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--pale {
+  &:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    border-color: #b5b9be;
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
