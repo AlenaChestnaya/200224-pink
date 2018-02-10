@@ -23,19 +23,29 @@
   // min-height: 69px;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-top: 22px;
+  padding-top: 10px;
   padding-bottom: 21px;
   background-color: @dark-blue;
 }
 
-.page-header__logo svg {
-  width: 75px;
-  height: 23px;
-}
+.page-header__logo {
+  svg {
+    margin-left: -65px;
+  }
 
-.page-header__logo-pink {
-  width: 75px;
-  height: 23px;
+  &:hover path {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  &:active .page-header__logo-point,
+  &:active .page-header__logo-sparkles--path {
+    fill: @pink;
+  }
 }
 
 .page-header__logo-point,
@@ -87,9 +97,10 @@
     font-size: 50px;
   }
 
-  .page-header__logo svg {
-    width: 147px;
-    height: 40px;
+  .page-header__logo {
+    svg {
+      margin-left: 0;
+    }
   }
 
   .page-header__logo-glasses {
