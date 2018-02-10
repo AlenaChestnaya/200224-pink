@@ -19,12 +19,14 @@
 }
 
 .price__header {
+  position: relative;
   padding-top: 25px;
   padding-bottom: 23px;
   background-color: #283645;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   box-sizing: border-box;
+  background-clip: padding-box;
 
   &--left {
     border: none;
@@ -36,6 +38,28 @@
     border: none;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+  }
+}
+
+.price__band {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 74px;
+  height: 73px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+
+  span {
+    display: block;
+    width: 77px;
+    height: 73px;
+    transform: rotate(-45deg);
+    padding-top: 5px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
   }
 }
 
@@ -132,6 +156,20 @@
     padding-bottom: 16px;
   }
 
+  .price__band {
+    width: 61px;
+    height: 61px;
+    left: 0;
+    background-image: url("../img/bg-hit-tablet.svg");
+
+    span {
+      display: block;
+      width: 61px;
+      height: 61px;
+      padding-top: 0;
+    }
+  }
+
   .price__item--mobile {
     display: none;
   }
@@ -151,6 +189,18 @@
     min-width: 235px;
     padding-top: 25px;
     padding-bottom: 23px;
+  }
+
+  .price__band {
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+
+    span {
+      width: 77px;
+      height: 73px;
+      padding-top: 5px;
+    }
   }
 
   .price__empty {
