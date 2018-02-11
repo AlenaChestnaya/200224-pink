@@ -73,7 +73,8 @@
 
 @media (min-width: @tablet) {
   .achievements-list {
-    min-width: 620px;
+    width: 620px;
+    padding-top: 45px;
     padding-left: 60px;
     padding-bottom: 5px;
     margin-bottom: 51px;
@@ -102,7 +103,10 @@
 @media (min-width: @desktop) {
   .achievements-list {
     width: 940px;
-    padding: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 52px;
+    padding-bottom: 30px;
     overflow: auto;
   }
 
@@ -111,11 +115,11 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 260px;
+    // width: 260px;
+    min-width: 210px;
+    width: auto;
     height: 142px;
-    margin-top: 48px;
-    margin-left: 60px;
-    margin-bottom: 30px;
+    margin-top: 0;
   }
 
   .achievements-list__title {
@@ -123,7 +127,11 @@
   }
 
   .achievements-list__label {
-    margin-right: 58px;
+    // margin-right: 58px;
     margin-bottom: 0;
+  }
+
+  .achievements-list__item {
+    margin-bottom: 19px;
   }
 }

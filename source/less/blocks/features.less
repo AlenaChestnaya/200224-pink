@@ -1,5 +1,5 @@
 .features {
-  width: 320px;
+  min-width: 320px;
   height: 1002px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -9,7 +9,13 @@
 }
 
 .features__back {
-  background: @gray-back url("../img/bg-triangle-white.svg") no-repeat top;
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 376px;
+  background-color: @gray-back;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .features__header {
@@ -40,7 +46,7 @@
   &--smile::before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: 2;
     left: 50%;
     bottom: -376px;
     width: 157px;
@@ -65,18 +71,22 @@
 }
 
 .features__list {
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet) {
   .features {
-    width: @tablet;
+    min-width: @tablet;
     height: auto;
     padding-bottom: 0;
   }
 
   .features__list {
     margin-left: 330px;
+  }
+
+  .features__back {
+    padding-bottom: 6px;
   }
 
   .features__item--smile::before {
@@ -111,12 +121,16 @@
 
 @media (min-width: @desktop) {
   .features {
-    width: @desktop;
+    min-width: @desktop;
   }
 
   .features__list {
     margin-left: auto;
     margin-bottom: 0;
+  }
+
+  .features__back {
+    padding-bottom: 0px;
   }
 
   .features__header {

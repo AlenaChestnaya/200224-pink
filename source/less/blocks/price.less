@@ -1,10 +1,14 @@
 .price {
   min-width: 320px;
   margin: 0 auto;
-  padding-top: 130px;
+  margin-top: 50px;
+  padding-top: 90px;
   padding-bottom: 45px;
   text-align: center;
-  background: @gray-back url("../img/bg-triangle-white.svg") no-repeat top;
+  background-color: @gray-back;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .price__table {
@@ -132,6 +136,11 @@
 }
 
 @media (min-width: @tablet) {
+  .price {
+    min-width: @tablet;
+    margin-top: 20px;
+  }
+
   .price__table {
     min-width: 620px;
     margin-bottom: 70px;
@@ -177,9 +186,18 @@
   .price__presence {
     margin: 0 auto;
   }
+
+  .price__scroll {
+    overflow: visible;
+  }
 }
 
 @media (min-width: @desktop) {
+  .price {
+    min-width: @desktop;
+    padding-top: 140px;
+  }
+
   .price__table {
     min-width: 940px;
     margin-bottom: 95px;
