@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -155,22 +158,19 @@
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
 
-            <!-- <li>
-              <blockquote class="review__item">
-              <cite class="review__author-name">Дмитрий Комаров
-                <span class="review__remark">43 года, врач-реаниматолог</span>
-              </cite>
-              <p class="review__text">«Отличное приложение, начал использовать на работе - день пролетает незаметно!»</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote class="review__item">
-              <cite class="review__author-name">Игнат Ибрагимов
-                <span class="review__remark">38 лет, директор винзавода</span>
-              </cite>
-              <p class="review__text">«Всегда захожу в Пинк, когда креативлю с новой продукцией, очень выручает!»</p>
-              </blockquote>
-            </li> -->
+          <blockquote class="review__item review__item--hidden">
+            <cite class="review__author-name">Дмитрий Комаров
+              <span class="review__remark">43 года, врач-реаниматолог</span>
+            </cite>
+            <p class="review__text">«Отличное приложение, начал использовать на работе - день пролетает незаметно!»</p>
+          </blockquote>
+
+          <blockquote class="review__item review__item--hidden">
+            <cite class="review__author-name">Игнат Ибрагимов
+              <span class="review__remark">38 лет, директор винзавода</span>
+            </cite>
+            <p class="review__text">«Всегда захожу в Пинк, когда креативлю с новой продукцией, очень выручает!»</p>
+          </blockquote>
 
           <button class="review__toggle review__toggle--next" type="button" title="Следующий отзыв">
             <svg width="22" height="42">
