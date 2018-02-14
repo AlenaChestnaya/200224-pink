@@ -227,13 +227,17 @@
   }
 
   .user-photos__list {
-    margin-top: 92px;
+    margin-top: 88px;
   }
 
   .user-photos__item {
     min-height: 554px;
     margin-bottom: 54px;
     margin-left: 0;
+
+    &--marked {
+      margin-bottom: 50px;
+    }
   }
 
   .user-photos__photo--marked {
@@ -247,16 +251,29 @@
     }
   }
 
+  .user-photos__likes--marked {
+    min-width: 122px;
+
+    &::before {
+      right: 3px;
+    }
+  }
+
   .user-photos__flex-container {
     &--marked {
       max-width: 940px;
       width: 100%;
       margin: 0 auto;
+      padding-bottom: 15px;
       box-sizing: border-box;
     }
   }
 
   .user-photos__photos-box {
     width: 940px;
+  }
+
+  .user-photos__comment--marked {
+    flex-basis: 940px;
   }
 }

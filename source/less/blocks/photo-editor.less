@@ -82,18 +82,12 @@
 
     &--contrast {
       padding: 4px;
-      // width: 16px;
-      // height: 16px;
 
       svg {
         width: 16px;
         height: 16px;
       }
     }
-
-    // &--fill {
-    //   height: 25px;
-    // }
   }
 
   .photo-editor__range-controls {
@@ -109,10 +103,19 @@
 
   .photo-editor__item {
     width: 410px;
-    padding-bottom: 14px;
+    padding-bottom: 11px;
 
-    &:not(:last-child) {
-      margin-bottom: 15px;
+    &:first-child {
+      margin-bottom: 14px;
+    }
+
+    &:nth-child(2) {
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+    }
+
+    &:last-child {
+      padding-bottom: 19px;
     }
   }
 
@@ -128,11 +131,17 @@
     &--contrast {
       width: 32px;
       height: 32px;
+      padding-left: 6px;
+      padding-top: 0;
 
       svg {
         width: 32px;
         height: 32px;
       }
     }
+  }
+
+  .photo-editor__range-controls {
+    margin-right: 12px;
   }
 }

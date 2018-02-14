@@ -91,7 +91,7 @@
 @media (min-width: @desktop) {
   .post {
     min-width: 940px;
-    padding-top: 42px;
+    padding-top: 5px;
   }
 
   .post__back {
@@ -99,18 +99,26 @@
     margin: 0 auto;
     margin-top: 69px;
     padding-top: 55px;
+    padding-left: 60px;
     padding-bottom: 55px;
+    box-sizing: border-box;
   }
 
   .post__container {
+    justify-content: space-between;
     min-width: 410px;
     margin-left: 42px;
-    padding-left: 48px;
+    padding-left: 47px;
+  }
+
+  .post__editor {
+    margin-top: -5px;
   }
 
   .post__buttons {
     display: flex;
     width: 410px;
+    margin-bottom: 4px;
   }
 
   .post__post-button {
