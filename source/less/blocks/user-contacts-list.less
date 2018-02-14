@@ -16,6 +16,7 @@
   height: 63px;
   padding-left: 20px;
   padding-right: 70px;
+  padding-top: 5px;
   margin-top: 4px;
   margin-bottom: 18px;
   box-sizing: border-box;
@@ -91,9 +92,16 @@
     width: 820px;
   }
 
+  .user-contacts-list__item {
+    &::after {
+      top: 4px;
+    }
+  }
+
   .user-contacts-list__input {
     width: 375px;
     margin: 0;
+    margin-top: 2px;
   }
 
   .user-contacts-list__label {

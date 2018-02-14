@@ -42,6 +42,7 @@
     top: -4px;
     width: 39px;
     height: 39px;
+    box-sizing: border-box;
     background-color: #ffffff;
     border: 2px solid @gray-border;
     border-radius: 1px;
@@ -60,8 +61,8 @@
   display: none;
   position: absolute;
   z-index: 2;
-  left: 11px;
-  top: 9px;
+  left: 9px;
+  top: 7px;
   width: 22px;
   height: 16px;
   fill: #d22856;
@@ -74,7 +75,7 @@
 @media (min-width: @tablet) {
   .achievements-list {
     width: 620px;
-    padding-top: 45px;
+    padding-top: 38px;
     padding-left: 60px;
     padding-bottom: 5px;
     margin-bottom: 51px;
@@ -83,6 +84,7 @@
 
   .achievements-list__title {
     width: 430px;
+    margin-left: calc(~"50% - 215px - 23px");
   }
 
   .achievements-list__list {
@@ -105,7 +107,7 @@
     width: 940px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 52px;
+    padding-top: 47px;
     padding-bottom: 30px;
     overflow: auto;
   }
@@ -114,6 +116,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
     min-width: 210px;
     width: auto;
@@ -131,5 +134,10 @@
 
   .achievements-list__item {
     margin-bottom: 19px;
+  }
+
+  .achievements-list__icon-yes {
+    left: 7px;
+    top: 6px;
   }
 }

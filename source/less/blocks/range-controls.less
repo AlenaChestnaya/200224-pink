@@ -8,6 +8,10 @@
     position: absolute;
     bottom: 28px;
     left: 50%;
+
+    .range-controls__bar::before {
+      background-color: @pink;
+    }
   }
 
   &:active > .range-controls__bar::before {
@@ -41,6 +45,12 @@
     display: block;
     position: static;
     width: 202px;
+
+    &--active {
+      .range-controls__bar::before {
+        background-color: @gray-back;
+      }
+    }
   }
 
   .range-controls__bar {

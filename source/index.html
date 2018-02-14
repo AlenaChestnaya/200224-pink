@@ -38,7 +38,7 @@
 
     <header class="page-header">
       <h1 class="visually-hidden">Проект Пинк</h1>
-      <div class="page-header--back">
+      <div class="page-header page-header--back">
         <div class="page-header__desktop-top">
           <div class="page-header__top-wrapper">
             <a class="page-header__logo">
@@ -67,7 +67,6 @@
             </a>
           </div>
           <nav class="main-nav">
-            <!-- <button class="main-nav__toggle" type="button" title="Открыть меню"></button> -->
             <ul class="main-nav__menu menu-list">
               <li class="menu-list__item menu-list__item--current">
                 <a class="menu-list__link">Главная</a>
@@ -90,16 +89,16 @@
         <div class="download__box">
           <h2 class="visually-hidden">Ссылки на скачивание приложения</h2>
           <h3 class="download__header">Взгляните <br>на жизнь <br>иначе!</h3>
-          <a class="download__button button button--white">Скачать приложение</a>
+          <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__button button button--white">Скачать приложение</a>
           <ul class="download__phone-list phone-list">
             <li class="phone-list__item phone-list__item--apple">
-              <a class="phone-list__link" href="#" title="Apple"></a>
+              <a href="https://www.apple.com/itunes/working-itunes/market/" class="phone-list__link" href="#" title="Apple"></a>
             </li>
             <li class="phone-list__item phone-list__item--android">
-              <a class="phone-list__link" href="#" title="Android"></a>
+              <a href="https://play.google.com/store/apps;hl=ru" class="phone-list__link" href="#" title="Android"></a>
             </li>
             <li class="phone-list__item phone-list__item--windows">
-              <a class="phone-list__link" href="#" title="Windows"></a>
+              <a href="https://www.microsoft.com/" class="phone-list__link" href="#" title="Windows"></a>
             </li>
           </ul>
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -151,27 +150,32 @@
               <use xlink:href="#arrow-prev"></use>
             </svg>
           </button>
-          <blockquote class="review__item">
-          <cite class="review__author-name">Николай Петров
-            <span class="review__remark">25 лет, водитель трамвая</span>
-          </cite>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-
-          <blockquote class="review__item review__item--hidden">
-            <cite class="review__author-name">Дмитрий Комаров
-              <span class="review__remark">43 года, врач-реаниматолог</span>
-            </cite>
-            <p class="review__text">«Отличное приложение, начал использовать на работе - день пролетает незаметно!»</p>
-          </blockquote>
-
-          <blockquote class="review__item review__item--hidden">
-            <cite class="review__author-name">Игнат Ибрагимов
-              <span class="review__remark">38 лет, директор винзавода</span>
-            </cite>
-            <p class="review__text">«Всегда захожу в Пинк, когда креативлю с новой продукцией, очень выручает!»</p>
-          </blockquote>
-
+          <ul class="review__list">
+            <li>
+              <blockquote class="review__item">
+              <cite class="review__author-name">Николай Петров
+                <span class="review__remark">25 лет, водитель трамвая</span>
+              </cite>
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote class="review__item review__item--hidden">
+                <cite class="review__author-name">Дмитрий Комаров
+                  <span class="review__remark">43 года, врач-реаниматолог</span>
+                </cite>
+                <p class="review__text">«Отличное приложение, начал использовать на работе - день пролетает незаметно!»</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote class="review__item review__item--hidden">
+                <cite class="review__author-name">Игнат Ибрагимов
+                  <span class="review__remark">38 лет, директор винзавода</span>
+                </cite>
+                <p class="review__text">«Всегда захожу в Пинк, когда креативлю с новой продукцией, очень выручает!»</p>
+              </blockquote>
+            </li>
+          </ul>
           <button class="review__toggle review__toggle--next" type="button" title="Следующий отзыв">
             <svg width="22" height="42">
               <use xlink:href="#arrow-next"></use>
@@ -279,17 +283,20 @@
             </tr>
           </table>
         </div>
-        <!-- <ul class="price__slider slider-toggles">
+        <ul class="price__slider slider-toggles">
           <li class="slider-toggles__item">
-            <button class="slider-toggles__toggle" type="button">1</button>
+            <input class="visually-hidden" type="radio" name="switcher" value="1" id="slide-1">
+            <label class="slider-toggles__toggle" for="slide-1">Первый слайд</label>
           </li>
           <li class="slider-toggles__item">
-            <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">2</button>
+            <input class="visually-hidden" type="radio" name="switcher" value="2" id="slide-2">
+            <label class="slider-toggles__toggle slider-toggles__toggle--active" for="slide-2">Второй слайд</label>
           </li>
           <li class="slider-toggles__item">
-            <button class="slider-toggles__toggle" type="button">3</button>
+            <input class="visually-hidden" type="radio" name="switcher" value="3" id="slide-3">
+            <label class="slider-toggles__toggle" for="slide-3">Третий слайд</label>
           </li>
-        </ul> -->
+        </ul>
       </section>
 
       <section class="contacts">
@@ -325,7 +332,7 @@
     <footer>
       <section class="social social--index">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="social__logo" href="index.html">
+        <a class="social__logo" href="index.html" title="Проект Пинк, переход на главную страницу">
           <svg width="146" height="41" viewBox="0 0 146 41">
             <g class="social__logo-pink">
               <path class="social__logo-icon social__logo-icon--blue" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>

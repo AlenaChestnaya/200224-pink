@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -41,7 +44,7 @@
     </svg>
 
     <header class="page-header page-header--smaller">
-      <div class="page-header--back">
+      <div class="page-header page-header--back">
         <div class="page-header__desktop-top">
           <div class="page-header__top-wrapper">
             <a class="page-header__logo" href="index.html">
@@ -70,7 +73,6 @@
             </a>
           </div>
           <nav class="main-nav">
-            <!-- <button class="main-nav__toggle" type="button" title="Открыть меню"></button> -->
             <ul class="main-nav__menu menu-list">
               <li class="menu-list__item">
                 <a class="menu-list__link" href="index.html">Главная</a>
@@ -96,8 +98,8 @@
       <section class="user-photos">
         <h2 class="visually-hidden">Фотографии других пользователей</h2>
         <p class="user-photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <ul class="user-photos__list">
-          <li class="user-photos__item user-photos__item--marked">
+        <div class="user-photos__list">
+          <article class="user-photos__item user-photos__item--marked">
             <a href="#">
               <picture class="user-photos__photo user-photos__photo--marked">
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -113,9 +115,9 @@
               <p class="user-photos__comment user-photos__comment--marked">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <span class="user-photos__likes user-photos__likes--marked">Нравится: 215</span>
             </div>
-          </li>
+          </article>
           <div class="user-photos__photos-box">
-            <li class="user-photos__item">
+            <article class="user-photos__item">
               <a href="#">
                 <picture class="user-photos__photo">
                   <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
@@ -131,8 +133,8 @@
                 <p class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <span class="user-photos__likes">Нравится: 356</span>
               </div>
-            </li>
-            <li class="user-photos__item">
+            </article>
+            <article class="user-photos__item">
               <a href="#">
                 <picture class="user-photos__photo">
                   <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
@@ -148,8 +150,8 @@
                 <p class="user-photos__comment">Соседи будут рады!</p>
                 <span class="user-photos__likes">Нравится: 666</span>
               </div>
-            </li>
-            <li class="user-photos__item">
+            </article>
+            <article class="user-photos__item">
               <a href="#">
                 <picture class="user-photos__photo">
                   <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
@@ -165,8 +167,8 @@
                 <p class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <span class="user-photos__likes">Нравится: 215</span>
               </div>
-            </li>
-            <li class="user-photos__item">
+            </article>
+            <article class="user-photos__item">
               <a href="#">
                 <picture class="user-photos__photo">
                   <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
@@ -182,8 +184,8 @@
                 <p class="user-photos__comment">Самая кубанская в мире!</p>
                 <span class="user-photos__likes">Нравится: 4</span>
               </div>
-            </li>
-            <li class="user-photos__item">
+            </article>
+            <article class="user-photos__item">
               <a href="#">
                 <picture class="user-photos__photo">
                   <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
@@ -199,8 +201,8 @@
                 <p class="user-photos__comment">Где снег-то?</p>
                 <span class="user-photos__likes">Нравится: 150</span>
               </div>
-            </li>
-            <li class="user-photos__item">
+            </article>
+            <article class="user-photos__item">
               <a href="#">
                 <picture class="user-photos__photo">
                   <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
@@ -216,9 +218,9 @@
                 <p class="user-photos__comment">Всем GM и взаимные лайки!</p>
                 <span class="user-photos__likes">Нравится: 2560</span>
               </div>
-            </li>
+            </article>
           </div>
-        </ul>
+        </div>
       </section>
 
       <section class="post">
@@ -277,7 +279,7 @@
     <footer>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="social__logo" href="index.html">
+        <a class="social__logo" href="index.html" title="Проект Пинк, переход на главную страницу">
           <svg width="146" height="41" viewBox="0 0 146 41">
             <g class="social__logo-pink">
               <path class="social__logo-icon social__logo-icon--blue" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
