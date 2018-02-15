@@ -28,27 +28,33 @@
   }
 }
 
-.user-photos__photo--marked::before {
-  content: "Панорама дня";
-  position: absolute;
-  top: 0;
-  right: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 6px;
-  padding-bottom: 5px;
-  background-color: @pink;
-  font-family: @bold-font;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
 .user-photos__photo {
   display: block;
   text-align: center;
+
+  &--marked {
+    img {
+      width: 100%;
+    }
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: 0;
+      right: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 6px;
+      padding-bottom: 5px;
+      background-color: @pink;
+      font-family: @bold-font;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .user-photos__photo img {
