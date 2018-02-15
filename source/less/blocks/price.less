@@ -1,7 +1,7 @@
 .price {
   min-width: 320px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 43px;
   padding-top: 90px;
   padding-bottom: 45px;
   text-align: center;
@@ -24,8 +24,8 @@
 
 .price__header {
   position: relative;
-  padding-top: 25px;
-  padding-bottom: 23px;
+  padding-top: 17px;
+  padding-bottom: 21px;
   background-color: #283645;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
@@ -85,6 +85,7 @@
 
 .price__sum {
   display: block;
+  margin-top: 2px;
   font-family: @light-font;
   font-weight: 300;
   font-size: 24px;
@@ -93,7 +94,10 @@
 }
 
 .price__cell {
-  padding: 22px;
+  padding-left: 20px;
+  padding-right: 17px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: start;
   box-sizing: border-box;
   line-height: 30px;
@@ -116,12 +120,13 @@
 .price__presence {
   display: block;
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 
   &--yes {
     width: 31px;
     height: 21px;
     background-image: url("../img/icon-yes.svg");
-    background-size: 90%;
   }
 
   &--no {
@@ -133,6 +138,7 @@
 
 .price__slider {
   margin: 0 auto;
+  margin-top: 2px;
 }
 
 @media (min-width: @tablet) {
