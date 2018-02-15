@@ -1,4 +1,6 @@
 .user-contacts-list {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   padding: 0;
   list-style: none;
@@ -87,7 +89,7 @@
 
 @media (min-width: @desktop) {
   .user-contacts-list {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 820px;
   }
