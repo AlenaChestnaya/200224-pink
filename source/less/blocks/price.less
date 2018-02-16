@@ -162,8 +162,8 @@
   .price__cell {
     padding-top: 7px;
     padding-right: 25px;
-    padding-left: 25px;
     padding-bottom: 8px;
+    padding-left: 25px;
     text-transform: initial;
 
     &--large-screen {
@@ -227,7 +227,8 @@
 @media (min-width: @desktop) {
   .price {
     min-width: @desktop;
-    padding-top: 140px;
+    padding-top: 148px;
+    margin-top: 18px;
   }
 
   .price__table {
@@ -237,8 +238,17 @@
 
   .price__header {
     min-width: 235px;
-    padding-top: 25px;
-    padding-bottom: 23px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .price__name {
+    font-size: 18px;
+  }
+
+  .price__sum {
+    margin-top: 2px;
+    font-size: 24px;
   }
 
   .price__band {
@@ -258,6 +268,14 @@
   }
 
   .price__cell {
-    padding: 24px;
+    padding-top: 18px;
+    padding-right: 17px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    font-size: 18px;
+
+    &--large-screen {
+      padding-top: 14px;
+    }
   }
 }

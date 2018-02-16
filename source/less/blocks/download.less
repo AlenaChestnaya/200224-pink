@@ -118,30 +118,39 @@
   .download {
     width: @desktop;
     min-height: 645px;
-    margin-top: 98px;
+    margin-top: 110px;
 
     &::before {
       width: 1050px;
       height: 645px;
       left: 25px;
+      bottom: 22px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
     }
   }
 
   .download__header {
     margin-top: 20px;
+    padding-left: 15px;
+    font-size: 50px;
+    line-height: 58px;
   }
 
   .download__button {
-    margin-top: 62px;
+    margin-top: 56px;
     margin-bottom: 67px;
   }
 
   .download__text {
-    margin-top: 60px;
+    margin-top: 54px;
     margin-bottom: 124px;
   }
+
+  .download__box {
+    padding-left: 0;
+  }
 }
+
 
 @media (min-width: @desktop) and (min-resolution: @retina-dpi),
   (min-width: @desktop) and (min-resolution: @retina-dppx) {
