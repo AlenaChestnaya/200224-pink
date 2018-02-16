@@ -12,7 +12,7 @@
 }
 
 .price__table {
-  min-width: 828px;
+  width: 828px;
   margin: 0 auto;
   margin-bottom: 40px;
   border-collapse: collapse;
@@ -144,12 +144,14 @@
 @media (min-width: @tablet) {
   .price {
     min-width: @tablet;
-    margin-top: 20px;
+    margin-top: 22px;
+    padding-top: 88px;
+    padding-bottom: 1px;
   }
 
   .price__table {
-    min-width: 620px;
-    margin-bottom: 70px;
+    width: 620px;
+    margin-bottom: 68px;
   }
 
   .price__empty {
@@ -158,17 +160,37 @@
   }
 
   .price__cell {
-    padding: 15px;
+    padding-top: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 8px;
+    text-transform: initial;
 
     &--large-screen {
       display: table-cell;
+      padding-left: 15px;
     }
   }
 
   .price__header {
-    min-width: 153px;
-    padding-top: 21px;
-    padding-bottom: 16px;
+    min-width: 154px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 2px;
+
+    &--right {
+      padding-left: 2px;
+    }
+  }
+
+  .price__name {
+    font-size: 16px;
+  }
+
+  .price__sum {
+    margin-top: -4px;
+    font-size: 18px;
   }
 
   .price__band {
@@ -196,6 +218,10 @@
   .price__scroll {
     overflow: visible;
   }
+
+  .price__slider {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -205,7 +231,7 @@
   }
 
   .price__table {
-    min-width: 940px;
+    width: 940px;
     margin-bottom: 95px;
   }
 

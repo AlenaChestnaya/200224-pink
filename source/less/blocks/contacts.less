@@ -113,7 +113,7 @@
 @media (min-width: @tablet) {
   .contacts {
     min-width: @tablet;
-    padding-top: 56px;
+    padding-top: 47px;
   }
 
   .contacts__list {
@@ -121,12 +121,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
     min-width: 620px;
-    margin-top: 57px;
+    margin-top: 47px;
     padding-bottom: 30px;
   }
 
   .contacts__item {
     min-width: 250px;
+
+    &--tel {
+      padding-left: 9px;
+    }
+
+    &--mail {
+      padding-right: 11px;
+    }
   }
 
   .contacts__header {
@@ -138,15 +146,24 @@
   }
 
   .contacts__contact {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+    margin-top: 7px;
 
     &--bottom {
       margin-bottom: 0;
+    }
+
+    &--mail {
+      margin-top: 9px;
     }
   }
 
   .contacts__static-map {
     height: 375px;
+
+    &::after {
+      margin-top: 5px;
+    }
   }
 }
 
