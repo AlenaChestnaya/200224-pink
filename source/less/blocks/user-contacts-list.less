@@ -1,4 +1,6 @@
 .user-contacts-list {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   padding: 0;
   list-style: none;
@@ -15,6 +17,8 @@
   width: 100%;
   height: 63px;
   padding-left: 20px;
+  padding-right: 70px;
+  padding-top: 5px;
   margin-top: 4px;
   margin-bottom: 18px;
   box-sizing: border-box;
@@ -30,16 +34,45 @@
     color: @dark-blue;
     opacity: 1;
   }
+
+  &:hover {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
 }
 
 @media (min-width: @tablet) {
   .user-contacts-list {
     width: 500px;
   }
-                                            /*  Иконку в поле вставить как фоновую картинку с бэкгр-позишн */
+
   .user-contacts-list__item {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 2px;
+      top: 6px;
+      width: 60px;
+      height: 59px;
+      background-color: @gray-border;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--phone::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--mail::after {
+      background-image: url("../img/icon-mail.svg");
+    }
   }
 
   .user-contacts-list__input {
@@ -56,14 +89,21 @@
 
 @media (min-width: @desktop) {
   .user-contacts-list {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 820px;
+  }
+
+  .user-contacts-list__item {
+    &::after {
+      top: 4px;
+    }
   }
 
   .user-contacts-list__input {
     width: 375px;
     margin: 0;
+    margin-top: 2px;
   }
 
   .user-contacts-list__label {

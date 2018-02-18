@@ -7,6 +7,8 @@
 }
 
 .achievements-list__list {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   margin: 0 auto;
   margin-top: 43px;
@@ -15,8 +17,10 @@
 }
 
 .achievements-list__title {
-  width: 220px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
   .label();
   line-height: 18px;
   text-align: center;
@@ -42,13 +46,39 @@
     top: -4px;
     width: 39px;
     height: 39px;
-    background: greenyellow;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid @gray-border;
+    border-radius: 1px;
   }
+
+  &:hover::before {
+    border-color: @dark-blue;
+  }
+
+  &:active::before {
+    border-color: @pink;
+  }
+}
+
+.achievements-list__icon-yes {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: 9px;
+  top: 7px;
+  width: 22px;
+  height: 16px;
+}
+
+.achievements-list__input:checked + .achievements-list__label .achievements-list__icon-yes {
+  display: block;
 }
 
 @media (min-width: @tablet) {
   .achievements-list {
-    min-width: 620px;
+    width: 620px;
+    padding-top: 38px;
     padding-left: 60px;
     padding-bottom: 5px;
     margin-bottom: 51px;
@@ -57,6 +87,7 @@
 
   .achievements-list__title {
     width: 430px;
+    margin-left: calc(~"50% - 215px - 23px");
   }
 
   .achievements-list__list {
@@ -77,28 +108,37 @@
 @media (min-width: @desktop) {
   .achievements-list {
     width: 940px;
-    padding: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 47px;
+    padding-bottom: 30px;
     overflow: auto;
   }
 
   .achievements-list__list {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
-    width: 260px;
+    min-width: 210px;
+    width: auto;
     height: 142px;
-    margin-top: 48px;
-    margin-left: 60px;
-    margin-bottom: 30px;
+    margin-top: 0;
   }
 
   .achievements-list__title {
-    padding-right: 2px;
+    padding-right: 27px;
   }
 
   .achievements-list__label {
-    margin-right: 58px;
     margin-bottom: 0;
+  }
+
+  .achievements-list__item {
+    margin-bottom: 21px;
+  }
+
+  .achievements-list__icon-yes {
+    left: 7px;
+    top: 6px;
   }
 }

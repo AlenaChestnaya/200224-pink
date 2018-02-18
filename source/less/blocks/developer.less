@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  width: 130px;
   margin: 0 auto;
 }
 
@@ -16,22 +16,39 @@
   width: 27px;
   height: 34px;
   margin-left: auto;
-  background: url('../img/logo-htmlacademy.svg') no-repeat center;
+
+  &:hover svg {
+    fill: @dark-blue;
+  }
+
+  &:active svg {
+    fill: #bec2c7;
+  }
+}
+
+.developer__link svg {
+  fill: @pink;
 }
 
 @media (min-width: @tablet) {
   .developer {
     margin: 0;
+    padding-top: 6px;
   }
 }
 
 @media (min-width: @desktop) {
   .developer {
-    width: 160px;
+    width: 154px;
+    padding-top: 2px;
   }
 
   .developer__text {
     margin-left: 0;
     font-size: 18px;
+  }
+
+  .developer__link {
+    margin-top: 5px;
   }
 }

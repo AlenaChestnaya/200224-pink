@@ -11,6 +11,7 @@
   height: 201px;
   margin-top: 10px;
   padding-left: 19px;
+  padding-right: 19px;
   padding-top: 15px;
   box-sizing: border-box;
   overflow: auto;
@@ -29,6 +30,8 @@
 }
 
 .description-field__title {
+  width: 100%;
+  margin: 0 auto;
   .label();
   line-height: 30px;
 }
@@ -36,9 +39,10 @@
 @media (min-width: @tablet) {
   .description-field {
     order: 5;
-    min-width: 620px;
+    width: 620px;
     padding-top: 31px;
     padding-bottom: 48px;
+    margin-top: 0;
   }
 
   .description-field__field {
@@ -48,15 +52,16 @@
   }
 
   .description-field__title {
+    width: auto;
     padding-left: 38px;
     padding-right: 40px;
+    margin-left: calc(~"50% - 130px");
   }
 }
 
 @media (min-width: @desktop) {
   .description-field {
-    min-width: 940px;
-    margin-top: 0;
+    width: 940px;
     padding-top: 28px;
     padding-bottom: 40px;
   }

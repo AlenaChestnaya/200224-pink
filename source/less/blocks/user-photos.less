@@ -6,36 +6,63 @@
 }
 
 .user-photos__title {
-  margin: 0;
+  width: 250px;
+  margin: 0 auto;
   line-height: 30px;
 }
 
 .user-photos__list {
-  margin: 0;
   margin-top: 48px;
-  padding: 0;
-  list-style: none;
 }
 
 .user-photos__item {
+  width: auto;
   margin: 20px;
-  margin-top: 0;
-  text-align: start;
   line-height: 24px;
-  background-color: @gray-back;
+
+  &--marked {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .user-photos__photo {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 18px;
+  text-align: center;
+
+  &--marked {
+    img {
+      width: 100%;
+    }
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: 0;
+      right: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 6px;
+      padding-bottom: 5px;
+      background-color: @pink;
+      font-family: @bold-font;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
 }
 
-.user-photos__photo--marked {             /*  Только пока нет нормальной картинки!!!!  */
-  height: 137px;
+.user-photos__photo img {
+  vertical-align: bottom;
 }
 
 .user-photos__time {
+  margin-left: 2px;
   font-family: @light-font;
   font-weight: 300;
   font-size: 12px;
@@ -43,8 +70,8 @@
 }
 
 .user-photos__comment {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin-top: -1px;
+  margin-bottom: 9px;
 }
 
 .user-photos__author-name {
@@ -52,35 +79,59 @@
 }
 
 .user-photos__likes {
+  position: relative;
+  padding-left: 32px;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 25px;
   text-transform: uppercase;
   color: @pink;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .user-photos__flex-container {
-  padding-left: 17px;
+  width: 280px;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 22px;
   padding-bottom: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: @gray-back;
 }
 
 @media (min-width: @tablet) {
   .user-photos {
     min-width: @tablet;
-    padding-top: 100px;
+    padding-top: 92px;
   }
 
   .user-photos__title {
+    width: 480px;
     font-size: 18px;
   }
 
   .user-photos__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 76px;
     box-sizing: border-box;
+  }
+
+  .user-photos__photos-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .user-photos__item {
@@ -89,14 +140,26 @@
     justify-content: space-between;
     flex-basis: 300px;
     min-height: 455px;
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 20px;
     box-sizing: border-box;
 
     &--marked {
-      flex-basis: 620px;
+      flex-basis: auto;
       margin: 0 auto;
       margin-bottom: 50px;
+    }
+  }
+
+  .user-photos__photo--marked {
+    img {
+      height: 509px;
+    }
+
+    &::before {
+      top: 57px;
     }
   }
 
@@ -105,30 +168,54 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    width: 300px;
     padding-left: 27px;
     padding-right: 29px;
-    padding-bottom: 25px;
+    padding-bottom: 16px;
+    padding-top: 24px;
 
     &--marked {
       flex-direction: row;
       flex-wrap: wrap;
+      width: 620px;
     }
   }
 
   .user-photos__comment {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 65px;
+    margin: 0;
+
+    &--marked {
+      display: block;
+      flex-basis: 620px;
+      order: 3;
+      margin-top: -1px;
+      margin-bottom: 9px;
+    }
   }
 
-  .user-photos__comment--marked {
-    order: 3;
+  .user-photos__likes {
+    padding-left: 0;
+    top: -6px;
+
+    &::before {
+      left: auto;
+      right: 3px;
+      top: 6px;
+    }
+
+    &--marked {
+      min-width: 119px;
+      order: 2;
+      top: 0;
+    }
   }
 
-  .user-photos__likes--marked {
-    order: 2;
-  }
-
-  .user-photos__photo {             /*  Только пока нет нормальной картинки!!!!    */
-    height: 300px;
+  .user-photos__likes--marked::before {
+    right: 0;
   }
 }
 
@@ -137,17 +224,57 @@
     min-width: @desktop;
   }
 
+  .user-photos__title {
+    width: 620px;
+  }
+
   .user-photos__list {
-    margin-top: 92px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 88px;
   }
 
   .user-photos__item {
+    min-height: 554px;
     margin-bottom: 54px;
+    margin-left: 0;
 
     &--marked {
-      flex-basis: 940px;
+      margin-bottom: 50px;
     }
+  }
+
+  .user-photos__photo--marked {
+    img {
+      height: 506px;
+    }
+
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
+  }
+
+  .user-photos__likes--marked {
+    min-width: 122px;
+
+    &::before {
+      right: 3px;
+    }
+  }
+
+  .user-photos__flex-container {
+    &--marked {
+      max-width: 940px;
+      width: 100%;
+      padding-bottom: 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  .user-photos__photos-box {
+    width: 940px;
+  }
+
+  .user-photos__comment--marked {
+    flex-basis: 940px;
   }
 }
