@@ -44,13 +44,16 @@
                 </g>
               </svg>
             </a>
-            <button class="page-header__burger-toggle" type="button" title="Открыть меню">
-              <svg width="50" height="24">
+            <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button" title="Открыть меню">
+              <svg class="page-header__menu-toggle--burger" width="50" height="24">
                 <use xlink:href="#spr-icon-menu-burger"></use>
+              </svg>
+              <svg class="page-header__menu-toggle--close" width="24" height="24">
+                <use xlink:href="#spr-icon-menu-cross"></use>
               </svg>
             </button>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--nojs">
             <ul class="main-nav__menu menu-list">
               <li class="menu-list__item menu-list__item--current">
                 <a class="menu-list__link">Главная</a>
